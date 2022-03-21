@@ -1,53 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css">
-  <title></title>
-  
-</head>
-
-<body>
-  <div id="Home">
-    <header>
-      <h1>Paris</h1>
-      <nav>
-        <ul class="navbar">
-        <li class="nav">Attractions</li>
-        <li class="nav">Foods</li>
-        <li class="nav">Tours</li>
-        <li class="nav">Customs</li>
-        <li class="nav">About Us</li>
-      </ul>
-    </nav>
-    </header>
-    <div>
-      <img>
-      <h2>Paris</h2>
-      <h3>"It is not a city, it is a world"</h3>
-    </div>
-  </div>
-
-  <div id="Attractions">
-    <h2>Attractions</h2>
-  </div>
-  <div id="Foods">
-    <h2>Foods</h2>
-  </div>
-  <div id="Tours">
-    <h2>Tours</h2>
-  </div>
-  <div id="Customs">
-    <h2>Customs</h2>
-  </div>
-  <div id="About-Us">
-    <h2>About Us</h2>
-  </div>
-  <script type="module" src="/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>GSAP Project</title>
+  </head>
+  <body>
+      <div class="header">
+        <ul>
+          <li><a href="#Paris" class="paris">Paris</a></li>
+          <li><a href="#attractions">Attractions</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#customs">Customs</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80" alt="Image of Paris" class="homeimage">
+        <div class="container">
+          <p class="center">Paris</p>
+          <p class="burner">“Paris is not a city; it's a world.”</p>
+        </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
