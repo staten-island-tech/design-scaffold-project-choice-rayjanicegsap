@@ -1,46 +1,96 @@
 html,
 body,
-* {
-  box-sizing: border-box;
-  font-size: 66%;
-  padding: 0;
-  margin: 0;
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
-:root {
-  --black: #000;
-  --yellow: #f0ee91;
-  --dark-blue: #135cc5;
-  --light-gray: #dddddd;
-  --dark-red: #dc2626;
-  --white: #ffffff;
+:root{
+/*Custom Color Properties*/
+    --blue: #192C6F;
+    --yellow: #FAF6D3;
+    --dark-yellow: #B1B27A;
+    --gray: #AA9898;
+    --black: #fffff;
+    --white: #ffff;
 
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
-  --smallText: 0.8rem;
-}
-/*navbar*/
-#Home {
-  font-size: var(--h1);
-  background-color: var(--yellow);
-}
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+    --lightmode: var(--yellow);
+    --lightmode-shader: var(--gray);
+    --lightmode-fontcolor: var(--black);
 
-.nav {
-  float: left;
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
+    --darkmode: var(--blue);
+    --darkmode-shader:var(--gray);
+    --darkmode-fontcolor: var(--white);
+
+/*Typography*/
+  --h1: 7rem;
+  --h2: 5rem;
+  --h3: 3rem;
+  --h4: 2rem;
+  --h5: 1rem;
 }
 
-.nav:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
+h1 {
+    font-size: var(--h1);
+  }
+  h2 {
+    font-size: var(--h2);
+  }
+  
+  h3 {
+    font-size: var(--h3);
+  }
+  
+  h4 {
+    font-size: var(--h4);
+  }
+  
+  h5 {
+    font-size: var(--h5);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--lightmode);
+    position: fixed;
+    top: 0;
+    width: 100%;  
+  }
+
+  li {
+    float: left;
+    font-size: var(--h2);
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    color: var(--black);
+
+  }
+  .header{
+    background-color: var(--lightmode);
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--h1);
+    color: var(--yellow);
+    text-shadow: 5px 5px var(--gray);
+  }
