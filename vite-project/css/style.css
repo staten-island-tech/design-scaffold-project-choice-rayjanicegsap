@@ -1,0 +1,46 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-size: 66%;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --black: #000;
+  --yellow: #f0ee91;
+  --dark-blue: #135cc5;
+  --light-gray: #dddddd;
+  --dark-red: #dc2626;
+  --white: #ffffff;
+
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --smallText: 0.8rem;
+}
+/*navbar*/
+#Home {
+  font-size: var(--h1);
+  background-color: var(--yellow);
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav {
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.nav:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
