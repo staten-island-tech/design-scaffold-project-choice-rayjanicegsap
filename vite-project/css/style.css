@@ -5,7 +5,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 :root {
   /*Custom Color Properties*/
@@ -15,6 +15,7 @@ body,
   --gray: #aa9898;
   --black: #fffff;
   --white: #ffff;
+
 
   --lightmode: var(--yellow);
   --lightmode-shader: var(--gray);
@@ -26,7 +27,7 @@ body,
 
   /*Typography*/
   --h1: 10rem;
-  --h2: 5rem;
+  --h2: 4rem;
   --h3: 3rem;
   --h4: 2rem;
   --h5: 1rem;
@@ -64,7 +65,7 @@ li {
   font-size: var(--h2);
   display: block;
   text-align: center;
-  padding: 0.5rem 9.5rem;
+  padding: 1rem 6.294rem;
   color: var(--black);
 }
 li:hover {
@@ -73,6 +74,7 @@ li:hover {
 }
 .header {
   background-color: var(--lightmode);
+  text-align: center;
 }
 .Paris {
   float: left;
@@ -95,7 +97,7 @@ img {
   transform: translate(-50%, -50%);
   font-size: var(--h1);
   color: var(--yellow);
-  text-shadow: 5px 5px var(--gray);
+  text-shadow: 8px 8px var(--gray);
   text-align: center;
 }
 .burner {
@@ -106,4 +108,13 @@ img {
   font-size: var(--h2);
   color: var(--yellow);
   text-shadow: 5px 5px var(--gray);
+}
+.attractions-background{
+  background-color: var(--yellow);
+}
+.attractionsheader {
+  background-color: var(--lightmode);
+  text-align: center;
+  padding: 1rem;
+
 }
