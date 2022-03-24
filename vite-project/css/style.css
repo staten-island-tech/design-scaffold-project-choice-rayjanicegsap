@@ -131,9 +131,17 @@ img {
   text-align: center;
 }
 
+.attractionsheader{
+text-align: center;
+font-size: 5rem;
+padding: 2rem;
+}
+.attractions-page{
+  background-color: var(--lightmode);
+}
 
 .display {
-  width: 90vw;
+  width: 60vw;
   margin: 2rem auto;
   display: flex;
   flex-direction: row;
@@ -142,12 +150,14 @@ img {
 }
 .display-card {
   width: 30%;
-  height: 55rem;
-  margin: 1rem auto;
-  background-color: var(--primary-background-color);
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
- 
+  background-color: var();
+  border-radius: 2rem;
+  padding: 2rem;
 }
+
+.image{
+  border-radius: 2rem;
+}
+

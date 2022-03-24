@@ -8,17 +8,17 @@ const attractions = [
     imageurl: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=srgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTY0Nzk2OTExMg&ixlib=rb-1.2.1&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450"
   }
 ]
-let cards = attractions;
-function insertCards() {
-    cards.forEach((attractions) => {
-        document.querySelector(".display").insertAdjacentHTML(
-            "beforeend",
-            `<div class="display-card">
-            <img class="image" src="${attractions.imageurl}" />
-            <h2 class="name">${attractions.name}</h2>
-            <h2 class="description">${attractions.description}</h2>
-          </section>`
-          );
-    });
-}
-insertCards();
+ let cards = attractions;
+ function insertCards() {
+     cards.forEach((attractions) => {
+         document.querySelector(".display").insertAdjacentHTML(
+             "beforeend",
+             `<div class="display-card">
+             <img class="image" src="${attractions.imageurl}" />
+             <h3 class="name">${attractions.name}</h3>
+             <h4 class="description">${attractions.description}</h4>
+           </section>`
+           );
+     });
+ }
+ insertCards();
