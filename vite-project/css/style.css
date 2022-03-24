@@ -87,10 +87,13 @@ button {
   background-color: var(--lightmode);
   height: 13rem;
   position: fixed;
+  flex-direction: row;
+  z-index:10;
 }
 .Paris {
   float: left;
   margin-left: 20px;
+  margin-right: 18.8rem
 }
 
 .header-list {
