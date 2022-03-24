@@ -28,7 +28,7 @@ body,
 
   /*Typography*/
   --h1: 10rem;
-  --h2: 5rem;
+  --h2: 8rem;
   --h3: 3rem;
   --h4: 2rem;
   --h5: 1rem;
@@ -63,16 +63,16 @@ ul {
 
 li {
   float: left;
-  font-size: var(--h2);
+  font-size: var(--h3);
   display: block;
   text-align: center;
   padding: 0.5rem 9.5rem;
   color: var(--black);
   background: linear-gradient(currentColor 0 0) bottom left/
-    var(--underline-width, 0%) 0.1em no-repeat;
+    var(--underline-width, 0%) 0.5rem no-repeat;
   color: #000000;
   display: inline-block;
-  padding: 0 0.5em 0.2em;
+  padding: 0 6.45rem 0.2rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -85,15 +85,16 @@ button {
 }
 .header {
   background-color: var(--lightmode);
-  height: 13rem;
+  height: 8.5rem;
   position: fixed;
   flex-direction: row;
   z-index:10;
 }
 .Paris {
   float: left;
-  margin-left: 20px;
-  margin-right: 18.8rem
+  margin-left: 1.25rem;
+  margin-right: 18.8rem;
+  font-size: var(--h2);
 }
 
 .header-list {
@@ -115,6 +116,9 @@ img {
 }
 .Paris-top {
   font-size: var(--h1);
+}
+.Paris-bottom{
+  font-size: var(--h2);
 }
 .center {
   position: absolute;
