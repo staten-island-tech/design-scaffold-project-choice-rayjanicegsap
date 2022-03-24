@@ -24,6 +24,8 @@ body,
   --darkmode-shader: var(--gray);
   --darkmode-fontcolor: var(--white);
 
+  --link-underline-padding: 0.5em;
+
   /*Typography*/
   --h1: 10rem;
   --h2: 5rem;
@@ -66,20 +68,34 @@ li {
   text-align: center;
   padding: 0.5rem 9.5rem;
   color: var(--black);
+  background: linear-gradient(currentColor 0 0) bottom left/
+    var(--underline-width, 0%) 0.1em no-repeat;
+  color: #000000;
+  display: inline-block;
+  padding: 0 0.5em 0.2em;
+  text-decoration: none;
+  transition: background-size 0.5s;
 }
 li:hover {
-  background-color: #111;
-  color: var(--darkmode-fontcolor);
+  --underline-width: 100%;
+}
+button {
+  all: unset;
+  cursor: pointer;
 }
 .header {
   background-color: var(--lightmode);
+  height: 13rem;
+  position: fixed;
 }
 .Paris {
   float: left;
+  margin-left: 20px;
 }
 
 .header-list {
   float: right;
+  margin-top: 30px;
 }
 img {
   display: block;
@@ -87,23 +103,23 @@ img {
   margin-right: auto;
   width: 100%;
 }
-
+.container {
+  background-image: url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
+}
+.Paris-top {
+  font-size: var(--h1);
+}
 .center {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--h1);
   color: var(--yellow);
   text-shadow: 5px 5px var(--gray);
   text-align: center;
-}
-.burner {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: var(--h2);
-  color: var(--yellow);
-  text-shadow: 5px 5px var(--gray);
 }
