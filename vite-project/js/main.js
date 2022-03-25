@@ -30,7 +30,7 @@ Buttonselectors.btn3.addEventListener("click", function () {
       DOMselectors.Aboutus.scrollIntoView();
       });
 
-const attractions = [
+/* const attractions = [
     {
     name: `The Eiffle Tower`,
     description: `A beautiful tower constructed out of iron beams. The heart of Paris. Next to the tower rests Champs de Mars and a magnificent bridge called the Pont Alexandre III.`,
@@ -52,3 +52,4 @@ const attractions = [
      });
  }
  insertCards();
+ */
