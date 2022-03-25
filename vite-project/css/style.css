@@ -98,7 +98,7 @@ button {
 }
 
 .header-list {
-  float: right;
+  float: left;
   margin-top: 4rem;
 }
 .container {
