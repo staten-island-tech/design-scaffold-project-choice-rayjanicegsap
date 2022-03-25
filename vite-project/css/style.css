@@ -66,13 +66,12 @@ li {
   font-size: var(--h3);
   display: block;
   text-align: center;
-  padding: 0.5rem 9.5rem;
   color: var(--black);
   background: linear-gradient(currentColor 0 0) bottom left/
     var(--underline-width, 0%) 0.5rem no-repeat;
   color: #000000;
   display: inline-block;
-  padding: 0 6.45rem 0.2rem;
+  padding: 0 6.45rem 1.5rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -85,27 +84,22 @@ button {
 }
 .header {
   background-color: var(--lightmode);
-  height: 8.5rem;
+  height: 10rem;
   position: fixed;
   flex-direction: row;
-  z-index:10;
+  z-index: 10;
 }
 .Paris {
   float: left;
   margin-left: 1.25rem;
   margin-right: 18.8rem;
+
   font-size: var(--h2);
 }
 
 .header-list {
   float: right;
-  margin-top: 30px;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-top: 4rem;
 }
 .container {
   background-image: url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80");
@@ -117,13 +111,14 @@ img {
 .Paris-top {
   font-size: var(--h1);
 }
-.Paris-bottom{
+.Paris-bottom {
   font-size: var(--h2);
 }
 .center {
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
+  width: 150rem;
   transform: translate(-50%, -50%);
   font-size: var(--h1);
   color: var(--yellow);
