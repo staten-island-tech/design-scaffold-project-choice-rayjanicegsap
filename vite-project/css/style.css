@@ -130,16 +130,7 @@ img {
   text-shadow: 5px 5px var(--gray);
   text-align: center;
 }
-
-.attractionsheader{
-text-align: center;
-font-size: 5rem;
-padding: 2rem;
-}
-.attractions-page{
-  background-color: var(--lightmode);
-}
-
+/* 
 .display {
   width: 60vw;
   margin: 2rem auto;
@@ -155,9 +146,18 @@ padding: 2rem;
   background-color: var();
   border-radius: 2rem;
   padding: 2rem;
-}
+} */
 
 .image{
   border-radius: 2rem;
 }
 
+.Attractions,
+.Food,
+.Customs,
+.Tours,
+.AboutUs{
+  text-align: center;
+  background-color: var(--lightmode);
+  padding: 3rem;
+}
