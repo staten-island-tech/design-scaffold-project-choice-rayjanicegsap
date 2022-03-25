@@ -28,3 +28,5 @@ Buttonselectors.btn3.addEventListener("click", function () {
     Buttonselectors.btn5.addEventListener("click", function () {
       DOMselectors.Aboutus.scrollIntoView();
       });
+
+      
