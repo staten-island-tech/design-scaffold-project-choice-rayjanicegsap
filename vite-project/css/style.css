@@ -109,7 +109,7 @@ button {
   height: 100rem;
 }
 .Paris-top {
-  font-size: var(--h1);
+  font-size: 15rem;
 }
 .Paris-bottom {
   font-size: var(--h2);
@@ -124,4 +124,15 @@ button {
   color: var(--yellow);
   text-shadow: 5px 5px var(--gray);
   text-align: center;
+}
+
+.Attractions,
+.Food,
+.Tours,
+.Customs,
+.AboutUs{
+  text-align: center;
+  background-color: var(--lightmode);
+  font-size: var(--h3);
+  padding: 3rem;
 }
