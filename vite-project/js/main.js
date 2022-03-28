@@ -5,7 +5,7 @@ const DOMselectors = {
   Tours: document.getElementById("Tours"),
   Customs: document.getElementById("Customs"),
   Aboutus: document.getElementById("Aboutus"),
-  Home:document.getElementById("Home")
+  Home: document.getElementById("Home"),
 };
 const Buttonselectors = {
   btn1: document.getElementById("btn1"),
@@ -13,25 +13,34 @@ const Buttonselectors = {
   btn3: document.getElementById("btn3"),
   btn4: document.getElementById("btn4"),
   btn5: document.getElementById("btn5"),
-  btn6: document.getElementById("Paris")
+  btn6: document.getElementById("Paris"),
 };
 Buttonselectors.btn1.addEventListener("click", function () {
   DOMselectors.Attractions.scrollIntoView();
-  });
+});
 Buttonselectors.btn2.addEventListener("click", function () {
   DOMselectors.Food.scrollIntoView();
-  });
+});
 Buttonselectors.btn3.addEventListener("click", function () {
   DOMselectors.Tours.scrollIntoView();
-  });
-  Buttonselectors.btn4.addEventListener("click", function () {
-    DOMselectors.Customs.scrollIntoView();
-    });
-    Buttonselectors.btn5.addEventListener("click", function () {
-      DOMselectors.Aboutus.scrollIntoView();
-      });
-      Buttonselectors.btn6.addEventListener("click", function () {
-        DOMselectors.Home.scrollIntoView();
-        });
-  
-      
+});
+Buttonselectors.btn4.addEventListener("click", function () {
+  DOMselectors.Customs.scrollIntoView();
+});
+Buttonselectors.btn5.addEventListener("click", function () {
+  DOMselectors.Aboutus.scrollIntoView();
+});
+Buttonselectors.btn6.addEventListener("click", function () {
+  DOMselectors.Home.scrollIntoView();
+});
+// This changes the color them of the website after the button has been clicked
+document.querySelector(".btn").addEventListener("click", function (){
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+
