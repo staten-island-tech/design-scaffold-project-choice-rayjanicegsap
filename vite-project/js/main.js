@@ -5,6 +5,7 @@ const DOMselectors = {
   Tours: document.getElementById("Tours"),
   Customs: document.getElementById("Customs"),
   Aboutus: document.getElementById("Aboutus"),
+  Home:document.getElementById("Home")
 };
 const Buttonselectors = {
   btn1: document.getElementById("btn1"),
@@ -12,6 +13,7 @@ const Buttonselectors = {
   btn3: document.getElementById("btn3"),
   btn4: document.getElementById("btn4"),
   btn5: document.getElementById("btn5"),
+  btn6: document.getElementById("Paris")
 };
 Buttonselectors.btn1.addEventListener("click", function () {
   DOMselectors.Attractions.scrollIntoView();
@@ -28,5 +30,8 @@ Buttonselectors.btn3.addEventListener("click", function () {
     Buttonselectors.btn5.addEventListener("click", function () {
       DOMselectors.Aboutus.scrollIntoView();
       });
-
+      Buttonselectors.btn6.addEventListener("click", function () {
+        DOMselectors.Home.scrollIntoView();
+        });
+  
       
