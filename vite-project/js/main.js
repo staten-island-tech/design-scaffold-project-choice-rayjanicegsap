@@ -1,5 +1,5 @@
 import "../css/style.css";
-import { gsap } from "gsap";
+/* import { gsap } from "gsap";  */
 const DOMselectors = [
   {
     Header: document.getElementById("Attractions"),
