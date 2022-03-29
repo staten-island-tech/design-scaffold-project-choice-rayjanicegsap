@@ -1,46 +1,47 @@
 import "../css/style.css";
-const DOMselectors = {
-  Attractions: document.getElementById("Attractions"),
-  Food: document.getElementById("Food"),
-  Tours: document.getElementById("Tours"),
-  Customs: document.getElementById("Customs"),
-  Aboutus: document.getElementById("Aboutus"),
-  Home: document.getElementById("Home"),
-};
-const Buttonselectors = {
-  btn1: document.getElementById("btn1"),
-  btn2: document.getElementById("btn2"),
-  btn3: document.getElementById("btn3"),
-  btn4: document.getElementById("btn4"),
-  btn5: document.getElementById("btn5"),
-  btn6: document.getElementById("Paris"),
-};
-Buttonselectors.btn1.addEventListener("click", function () {
-  DOMselectors.Attractions.scrollIntoView();
+import { gsap } from "gsap";
+const DOMselectors = [
+  {
+    Header: document.getElementById("Attractions"),
+    btn: document.getElementById("btn1"),
+  },
+  {
+    Header: document.getElementById("Food"),
+    btn: document.getElementById("btn2"),
+  },
+  {
+    Header: document.getElementById("Tours"),
+    btn: document.getElementById("btn3"),
+  },
+  {
+    Header: document.getElementById("Customs"),
+    btn: document.getElementById("btn4"),
+  },
+  {
+    Header: document.getElementById("Aboutus"),
+    btn: document.getElementById("btn5"),
+  },
+  {
+    Header: document.getElementById("Home"),
+    btn: document.getElementById("Paris"),
+  },
+];
+DOMselectors.forEach((DOMselectors) => {
+  DOMselectors.btn.addEventListener("click", function () {
+    DOMselectors.Header.scrollIntoView();
+  });
 });
-Buttonselectors.btn2.addEventListener("click", function () {
-  DOMselectors.Food.scrollIntoView();
-});
-Buttonselectors.btn3.addEventListener("click", function () {
-  DOMselectors.Tours.scrollIntoView();
-});
-Buttonselectors.btn4.addEventListener("click", function () {
-  DOMselectors.Customs.scrollIntoView();
-});
-Buttonselectors.btn5.addEventListener("click", function () {
-  DOMselectors.Aboutus.scrollIntoView();
-});
-Buttonselectors.btn6.addEventListener("click", function () {
-  DOMselectors.Home.scrollIntoView();
-});
+
 // This changes the color them of the website after the button has been clicked
-document.querySelector(".btn").addEventListener("click", function (){
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
+document.querySelector(".btn1").addEventListener("click", function () {
+  if (document.body.classList.contains("warm")) {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
   }
 });
-
+document.querySelector(".btn2").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  }
+});

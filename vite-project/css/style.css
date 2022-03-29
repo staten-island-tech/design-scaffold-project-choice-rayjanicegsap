@@ -32,7 +32,7 @@ body,
   --primary-shader: var(--gray);
   --primary-fontcolor: var(--white);
   --primary-button: var(--blue);
-  --primary-secondary: var(--pink)
+  --primary-secondary: var(--pink);
 }
 
 .warm {
@@ -40,7 +40,7 @@ body,
   --primary-shader: var(--gray);
   --primary-fontcolor: var(--black);
   --primary-button: var(--pink);
-  --primary-secondary: var(--blue)
+  --primary-secondary: var(--blue);
 }
 
 h1 {
@@ -77,10 +77,10 @@ li {
   text-align: center;
   color: var(--primary-fontcolor);
   background: linear-gradient(currentColor 0 0) bottom left/
-  var(--underline-width, 0%) 0.5rem no-repeat;
+    var(--underline-width, 0%) 0.5rem no-repeat;
   color: var(--primary-fontcolor);
   display: inline-block;
-  padding: 0 6.45rem 1.5rem;
+  padding: 0 6rem 1.5rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -98,7 +98,7 @@ button {
   flex-direction: row;
   z-index: 10;
 }
-.Paris {
+#Paris {
   float: left;
   margin-left: 1.25rem;
   margin-right: 18.8rem;
@@ -145,28 +145,15 @@ button {
   font-size: var(--h3);
   padding: 3rem;
 }
-
-.LightMode {
-  position: absolute;
-  left: 81.74%;
-  right: 5.28%;
-  top: 18.09%;
-  bottom: 76.92%;
-  font-size: var(--h3);
-  background-color: var(--pink);
-  text-align: center;
-  border-radius: 100px;
+.imageattractions {
+  float: right;
+  height: 40rem;
+  width: 80rem;
+  overflow: hidden;
 }
-
-.DarkMode {
-  position: absolute;
-  left: 81.74%;
-  right: 5.28%;
-  top: 26%;
-  bottom: 69.01%;
-  font-size: var(--h3);
-  background-color: var(--blue);
-  text-align: center;
-  border-radius: 100px;
-  color: var(--white);
+.imageattractions2 {
+  float: left;
+  height: 40rem;
+  width: 80rem;
+  overflow: hidden;
 }
