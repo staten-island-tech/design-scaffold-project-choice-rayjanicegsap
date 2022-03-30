@@ -17,6 +17,7 @@ body,
   --white: #ffff;
   --pink: #fbdddd;
 
+
   --link-underline-padding: 0.5em;
 
   /*Typography*/
@@ -147,25 +148,41 @@ button {
 }
 
 .image {
-  width: 50rem;
+  width: 40rem;
   height: auto;
-  float: left;
   overflow: hidden;
+  border-radius: 4rem;
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .display-card {
+  flex: 12.5rem;
   padding: 3rem;
-  vertical-align: top;
-  display: flexbox;
+  text-align: center;
+  margin: 0.625rem;
+  border-radius: 4rem;
+  /*background-color: var(--blue);*/
 }
 .name {
   font-size: var(--h3);
-  float: left;
+  padding-bottom: 1rem;
 }
 .description {
   font-size: var(--h3);
-  float: right;
+  padding-top: 1rem;
 }
-.display-att {
-  height: 50rem;
+
+.headers{
+  text-align: center;
+  text-shadow: 5px 5px var(--primary-shader);
+}
+
+
+.name{
+  font-size: 5rem;
 }
