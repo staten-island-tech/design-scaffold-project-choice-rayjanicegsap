@@ -77,10 +77,10 @@ li {
   text-align: center;
   color: var(--primary-fontcolor);
   background: linear-gradient(currentColor 0 0) bottom left/
-    var(--underline-width, 0%) 0.5rem no-repeat;
+    var(--underline-width, 0%) 0.75rem no-repeat;
   color: var(--primary-fontcolor);
   display: inline-block;
-  padding: 0 6.415rem 0.05rem;
+  padding: 0 6.415rem 2.3rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -105,7 +105,6 @@ button {
   color: var(--primary-fontcolor);
   font-size: var(--h2);
 }
-
 
 .header-list {
   float: left;
@@ -141,37 +140,32 @@ button {
 .Tours,
 .Customs,
 .AboutUs {
-  text-align: center;
   color: var(--primary-fontcolor);
   background-color: var(--primary);
   font-size: var(--h3);
   padding: 3rem;
 }
 
-.imageattractions {
-  float: right;
-  height: 40rem;
-  width: 80rem;
-  overflow: hidden;
-}
-.imageattractions2 {
+.image {
+  width: 50rem;
+  height: auto;
   float: left;
-  height: 40rem;
-  width: 80rem;
   overflow: hidden;
 }
 
-.image{
-  height: 30%;
-  width: 25%;
-}
-
-.display-card{
+.display-card {
   padding: 3rem;
+  vertical-align: top;
+  display: flexbox;
 }
-.name{
+.name {
   font-size: var(--h3);
+  float: left;
 }
-.description{
+.description {
   font-size: var(--h3);
+  float: right;
+}
+.display-att {
+  height: 50rem;
 }
