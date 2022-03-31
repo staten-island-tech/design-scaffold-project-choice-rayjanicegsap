@@ -148,7 +148,7 @@ button {
 
 .image {
   width: 40rem;
-  height: auto;
+  height: 30rem;
   overflow: hidden;
   border-radius: 4rem;
 }
@@ -157,6 +157,14 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.display-food{
+  flex: 12.5rem;
+  padding: 3rem;
+  text-align: center;
+  margin: 0.625rem;
+  border-radius: 4rem;
 }
 
 .display-card {
@@ -168,12 +176,12 @@ button {
   /*background-color: var(--blue);*/
 }
 .name {
-  font-size: var(--h3);
+  font-size: 5rem;
   padding-bottom: 1rem;
 }
 .description {
   font-size: var(--h3);
-  padding-top: 1rem;
+  padding-top: 1.75rem;
 }
 
 .headers {
@@ -181,6 +189,15 @@ button {
   text-shadow: 5px 5px var(--primary-shader);
 }
 
-.name {
-  font-size: 5rem;
+.food-image {
+  width: 50rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 4rem;
+}
+
+.tours-image{
+  width: 50%;
+  overflow: hidden;
+  border-radius: 4rem;
 }

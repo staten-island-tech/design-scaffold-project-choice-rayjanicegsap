@@ -1,7 +1,7 @@
 import "../css/style.css";
-import { gsap } from "gsap";
+/* import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger); */
 const DOMselectors = [
   {
     Header: document.getElementById("Attractions"),
@@ -78,7 +78,7 @@ const attractions = [
 let cards = attractions;
 function insertCards() {
   cards.forEach((attractions) => {
-    document.querySelector(".display").insertAdjacentHTML(
+    document.getElementById("display").insertAdjacentHTML(
       "beforeend",
       `<div class="display-card">
            <h3 class="name">${attractions.name}</h3>
@@ -90,8 +90,11 @@ function insertCards() {
     );
   });
 }
+
 insertCards();
-const tl = gsap.timeline({ delay: 0.2 });
+
+
+/* const tl = gsap.timeline({ delay: 0.2 });
 tl.from(".homepage", {
   opacity: 0,
   duration: 2,
@@ -103,4 +106,99 @@ tl.to(".Attractions", {
   },
   scale: 1.1,
   duration: 1,
-});
+}); */
+
+const foods = [
+  {
+    name: `Croissant`,
+    description: `Croissants are buttery and crispy bread that are prevalent in France, especially Paris. They are flaky and delicious; it’d be a mistake to miss out on this wonderful treat.`,
+    imageurl:
+      "https://www.aheadofthyme.com/wp-content/uploads/2020/05/quick-and-easy-butter-croissants-2.jpg",
+  },
+  {
+    name: `Macaroons`,
+    description: `Macaroons are small cake/biscuits made from ground almonds and dressed with a light coating of sugar.  `,
+    imageurl:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/11/03/colorful-french-macarons-bakery-box-wood-surface-.jpg.rend.hgtvcom.406.305.suffix/1635922448414.jpeg",
+  },
+  {
+    name: `French Onion Soup`,
+    description: `French Onion Soup is a classic soup made out of a base of meat stock and onions. This is often served with a croutons`,
+    imageurl:
+      "https://images.unsplash.com/photo-1549203438-a7696aed4dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80",
+  },
+      {
+    name: `Crème Brûlée`,
+    description: `The Crème Brûlée is a dessert filled with custard and sprinkled with sugar on the top. It is often called burnt cream due to its appearance. `,
+    imageurl:
+      "https://images.unsplash.com/photo-1554371650-1f19f803c220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  },  
+];
+
+let foodcards = foods;
+function insert() {
+  foodcards.forEach((foods) => {
+    document.getElementById("fooddisplay").insertAdjacentHTML(
+      "beforeend",
+      `<div class="display-food">
+      <div class="display-card">
+           <h3 class="name">${foods.name}</h3>
+           <img class="food-image" src="${foods.imageurl}" />
+           <h4 class="description">${foods.description}</h4>
+           </div>
+         </div>`
+    );
+  });
+}
+
+insert();
+
+const tours = [
+  {
+    name: `Lido de Paris Cabaret`,
+    description: `Spend an evening dinner with a three course meal while enjoying the new “Paris Merveilles” show.Enjoy an evening watching one of Paris’ productions while sampling from a menu of French specialties.`,
+    price: 90.38,
+    imageurl:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b3/ac/65.jpg",
+  },
+  {
+    name: `Disneyland`,
+    description: `Enjoy a day at both Disneyland Park and Walt Disney Studios. Experience attractions, shows, parades, along with meet ‘n’ greet. `,
+    price: 67.21,
+    imageurl:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/10/cc/34.jpg",
+  },
+  {
+    name: `Normandy D-Day Trip`,
+    description: `Enjoy a day exploring the beaches of Normdany. Enjoy a day full of sightseeing with a cup of cider and a luncheon at noon.`,
+    price: 192.51,
+    imageurl:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/1a/79/12.jpg",
+  },
+      {
+    name: `Champagne Fields`,
+    description: `Spend an day toruing the Champagne region of Paris. Enjoy a gourmet meal with Champagne tasting throughout the day.`,
+    price: 306.43,
+    imageurl:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/8f/aa.jpg"
+  },  
+];
+
+let tourcards = tours;
+function inserttours() {
+  tourcards.forEach((tours) => {
+    document.getElementById("tourdisplay").insertAdjacentHTML(
+      "beforeend",
+      `<div class="display-food">
+      <div class="display-card">
+           <h3 class="name">${tours.name}</h3>
+           <img class="tours-image" src="${tours.imageurl}" />
+           <h4 class="description">${tours.description}</h4>
+           <h4 class="price">Price: $${tours.price} as of 03/01/2022</h4>
+           </div>
+         </div>`
+    );
+  });
+}
+
+inserttours();
