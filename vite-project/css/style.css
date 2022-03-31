@@ -17,7 +17,6 @@ body,
   --white: #ffff;
   --pink: #fbdddd;
 
-
   --link-underline-padding: 0.5em;
 
   /*Typography*/
@@ -154,7 +153,7 @@ button {
   border-radius: 4rem;
 }
 
-.display{
+.display {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -177,12 +176,11 @@ button {
   padding-top: 1rem;
 }
 
-.headers{
+.headers {
   text-align: center;
   text-shadow: 5px 5px var(--primary-shader);
 }
 
-
-.name{
+.name {
   font-size: 5rem;
 }

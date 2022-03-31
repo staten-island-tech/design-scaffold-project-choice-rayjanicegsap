@@ -1,7 +1,7 @@
 import "../css/style.css";
-/* import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; */
-/* gsap.registerPlugin(ScrollTrigger); */
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const DOMselectors = [
   {
     Header: document.getElementById("Attractions"),
@@ -48,7 +48,7 @@ document.querySelector(".btn2").addEventListener("click", function () {
   }
 });
 
- const attractions = [
+const attractions = [
   {
     name: `The Eiffel Tower`,
     description: `A beautiful tower constructed out of iron beams. The heart of Paris. Next to the tower rests Champs de Mars and a magnificent bridge called the Pont Alexandre III.`,
@@ -67,7 +67,7 @@ document.querySelector(".btn2").addEventListener("click", function () {
     imageurl:
       "https://images.unsplash.com/photo-1627660852400-8afb9a04d667?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
-/*    {
+  /*    {
     name: `Cathédrale Notre-Dame`,
     description: `Notre-Dame de Paris is a medival Catholics cathedral that was dedicated to the Virign Mary. The cathedral is considered one of the most beautiful and finest example of French Gothic architecture.`,
     imageurl:
@@ -91,3 +91,16 @@ function insertCards() {
   });
 }
 insertCards();
+const tl = gsap.timeline({ delay: 0.2 });
+tl.from(".homepage", {
+  opacity: 0,
+  duration: 2,
+});
+tl.to(".Attractions", {
+  ScrollTrigger: {
+    trigger: ".image",
+    toggleActions: "restart none none none",
+  },
+  scale: 1.1,
+  duration: 1,
+});
