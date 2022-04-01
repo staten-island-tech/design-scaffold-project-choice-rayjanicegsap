@@ -33,6 +33,7 @@ body,
   --primary-fontcolor: var(--white);
   --primary-button: var(--blue);
   --primary-secondary: var(--pink);
+  --primary-card:var(--pink);
 }
 
 .warm {
@@ -41,6 +42,7 @@ body,
   --primary-fontcolor: var(--black);
   --primary-button: var(--pink);
   --primary-secondary: var(--blue);
+  --primary-card:var(--pink);
 }
 
 h1 {
@@ -101,7 +103,7 @@ button {
 #Paris {
   float: left;
   margin-left: 1.25rem;
-  margin-right: 18.8rem;
+  margin-right: 1.54rem;
   color: var(--primary-fontcolor);
   font-size: var(--h2);
 }
@@ -173,7 +175,7 @@ button {
   text-align: center;
   margin: 0.625rem;
   border-radius: 4rem;
-  /*background-color: var(--blue);*/
+  background-color: var(--primary-card);
 }
 .name {
   font-size: 5rem;
@@ -197,7 +199,10 @@ button {
 }
 
 .tours-image{
-  width: 50%;
+  width: 1100.82px;
+  height: 450px;
+  background-size: cover;
+  
   overflow: hidden;
   border-radius: 4rem;
 }

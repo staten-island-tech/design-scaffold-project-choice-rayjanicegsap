@@ -59,13 +59,13 @@ const foods = [
   },
   {
     name: `Macaroons`,
-    description: `Macaroons are small cake/biscuits made from ground almonds and dressed with a light coating of sugar.  `,
+    description: `Macaroons are small cake/biscuits made from ground almonds and dressed with a light coating of sugar along with other assortment of toppings that can include coconuts, cherries, or many more.  `,
     imageurl:
       "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/11/03/colorful-french-macarons-bakery-box-wood-surface-.jpg.rend.hgtvcom.406.305.suffix/1635922448414.jpeg",
   },
   {
     name: `French Onion Soup`,
-    description: `French Onion Soup is a classic soup made out of a base of meat stock and onions. This is often served with a croutons`,
+    description: `French Onion Soup is a classic soup made out of a base of meat stock and onions. This is often served with croutons.`,
     imageurl:
       "https://images.unsplash.com/photo-1549203438-a7696aed4dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80",
   },
