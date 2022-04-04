@@ -107,7 +107,36 @@ const tours = [
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/8f/aa.jpg",
   },
 ];
+
+const custom = [
+  {
+    name: `Never Take Wine To A Dinner Party`,
+    description: `It is a French custom to never bring wine to a dinner party. The host has carefully chosen a bottle of wine for the evening. By bringing your own bottle you are imply that you have no trust in the host’s taste.`,
+    imageurl:
+      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    name: `Slapped By A Herring`,
+    description: `During the year, places around France would hold festivals and carnivals. One of the key moments of the festivities is when 450 kilios of herring is tossed into the crowd. So if you ever get slapped with a herring, just know it was with good intentions.  `,
+    imageurl:
+      "https://images.unsplash.com/photo-1547108509-6cac880a4d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80",
+  },
+  {
+    name: `Being Late To Events`,
+    description: `While in other parts of the world, it is seem to be disrespectful. However, in France, the social norm is the opposite. Guests are usually 10-15 minutes late to an event. `,
+    imageurl:
+      "https://images.unsplash.com/photo-1624028409583-eac582b51895?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    name: `Celebrating With Car Horns`,
+    description: `Following the marriage of a newly wed couple, the newlyweds are greeted with screeching car horns as they pull away in their wedding car. The newlyweds are greeted and sent off with the sounds of hundreds of car horns from the guests and townspeople.`,
+    imageurl:
+      "https://images.unsplash.com/photo-1535745425003-d41f0bcca956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+];
+
 export { DOMselectors };
 export { attractions };
 export { foods };
 export { tours };
+export { custom };

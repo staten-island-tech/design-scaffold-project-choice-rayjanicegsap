@@ -144,7 +144,6 @@ button {
 .AboutUs {
   color: var(--primary-fontcolor);
   background-color: var(--primary);
-  font-size: var(--h3);
   padding: 3rem;
 }
 
@@ -163,16 +162,23 @@ button {
 
 .display-food {
   flex: 12.5rem;
-  padding: 3rem;
+  padding: 1rem;
   text-align: center;
-  margin: 0.625rem;
+  margin: 9rem;
   border-radius: 4rem;
 }
 
+.display-custom {
+  flex: 12.5rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 9rem;
+  border-radius: 4rem;
+}
 .display-card {
   height: 70rem;
   flex: 12.5rem;
-  padding: 3rem;
+  padding: 2.75rem;
   text-align: center;
   margin: 0.625rem;
   border-radius: 4rem;
@@ -183,7 +189,7 @@ button {
   padding-bottom: 1rem;
 }
 .description {
-  font-size: var(--h3);
+  font-size: 3.55rem;
   padding-top: 1.75rem;
 }
 
@@ -193,17 +199,37 @@ button {
 }
 
 .food-image {
-  width: 50rem;
+  width: 42rem;
   height: auto;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.tours-image {
+  width: 30%;
+  height: auto;
+  background-size: cover;
   overflow: hidden;
   border-radius: 4rem;
 }
 
-.tours-image {
-  width: 70rem;
-  height: auto;
-  background-size: cover;
-
+.tours-card {
+  height: 50%;
+  padding: 2rem;
+  text-align: center;
+  margin: 6rem;
+  border-radius: 4rem;
+  background-color: var(--primary-card);
+}
+.custom-image {
+  width: 80rem;
+  height: 35rem;
   overflow: hidden;
   border-radius: 4rem;
+}
+
+.info{
+  margin-left: 50%;
+  font-size: 5rem;
+  margin-top: 3rem;
 }

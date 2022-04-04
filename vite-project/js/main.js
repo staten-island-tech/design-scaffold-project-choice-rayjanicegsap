@@ -3,6 +3,7 @@ import { DOMselectors } from "./const";
 import { attractions } from "./const";
 import { tours } from "./const";
 import { foods } from "./const";
+import { custom } from "./const";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -68,7 +69,7 @@ function inserttours() {
     document.getElementById("tourdisplay").insertAdjacentHTML(
       "beforeend",
       `
-      <div class="display-card">
+      <div class="tours-card">
            <h3 class="name">${tours.name}</h3>
            <img class="tours-image" src="${tours.imageurl}" />
            <h4 class="description">${tours.description}</h4>
@@ -78,6 +79,24 @@ function inserttours() {
   });
 }
 inserttours();
+
+let customs = custom;
+function insertcustom() {
+  customs.forEach((custom) => {
+    document.getElementById("customsdisplay").insertAdjacentHTML(
+      "beforeend",
+      `<div class="display-custom">
+      <div class="display-card">
+           <h3 class="name">${custom.name}</h3>
+           <img class="custom-image" src="${custom.imageurl}" />
+           <h4 class="description">${custom.description}</h4>
+           </div>
+         </div>`
+    );
+  });
+};
+
+insertcustom();
 
 /* gsap scroll animations */
 ScrollTrigger.create({
