@@ -9,7 +9,7 @@ body,
 }
 :root {
   /*Custom Color Properties*/
-  --blue: #192c6f;
+  --blue: hsl(227, 63%, 27%);
   --yellow: #faf6d3;
   --dark-yellow: #b1b27a;
   --gray: #aa9898;
@@ -33,7 +33,7 @@ body,
   --primary-fontcolor: var(--white);
   --primary-button: var(--blue);
   --primary-secondary: var(--pink);
-  --primary-card:var(--pink);
+  --primary-card: var(--pink);
 }
 
 .warm {
@@ -42,7 +42,7 @@ body,
   --primary-fontcolor: var(--black);
   --primary-button: var(--pink);
   --primary-secondary: var(--blue);
-  --primary-card:var(--pink);
+  --primary-card: var(--pink);
 }
 
 h1 {
@@ -161,7 +161,7 @@ button {
   flex-wrap: wrap;
 }
 
-.display-food{
+.display-food {
   flex: 12.5rem;
   padding: 3rem;
   text-align: center;
@@ -170,6 +170,7 @@ button {
 }
 
 .display-card {
+  height: 70rem;
   flex: 12.5rem;
   padding: 3rem;
   text-align: center;
@@ -193,16 +194,16 @@ button {
 
 .food-image {
   width: 50rem;
-  height: 35rem;
+  height: auto;
   overflow: hidden;
   border-radius: 4rem;
 }
 
-.tours-image{
-  width: 1100.82px;
-  height: 450px;
+.tours-image {
+  width: 70rem;
+  height: auto;
   background-size: cover;
-  
+
   overflow: hidden;
   border-radius: 4rem;
 }

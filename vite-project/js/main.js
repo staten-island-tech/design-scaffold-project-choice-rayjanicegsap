@@ -13,7 +13,6 @@ DOMselectors.forEach((DOMselectors) => {
   });
 });
 
-// This changes the color them of the website after the button has been clicked
 document.querySelector(".btn1").addEventListener("click", function () {
   if (document.body.classList.contains("warm")) {
     document.body.classList.add("cool");
@@ -68,44 +67,41 @@ function inserttours() {
   tourcards.forEach((tours) => {
     document.getElementById("tourdisplay").insertAdjacentHTML(
       "beforeend",
-      `<div class="display-food">
+      `
       <div class="display-card">
            <h3 class="name">${tours.name}</h3>
            <img class="tours-image" src="${tours.imageurl}" />
            <h4 class="description">${tours.description}</h4>
            <h4 class="price">Price: $${tours.price} as of 03/01/2022</h4>
-           </div>
-         </div>`
+           </div>`
     );
   });
 }
 inserttours();
 
 /* gsap scroll animations */
-const tl = gsap.timeline({ delay: 0.2 });
-tl.from(".homepage", {
-  opacity: 0,
-  duration: 2,
+ScrollTrigger.create({
+  trigger: ".Attractions",
+  markers: true,
+  start: "top 50%",
+  end: "bottom 0%",
+  onEnter: () => {
+    gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#faf6d3" });
+  },
+  onLeaveBack: () => {
+    gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#FFFFFF" });
+  },
 });
 
-tl.to(".Attractions", {
-  ScrollTrigger: {
-    trigger: ".Attractions",
-    scrub: true,
-    end: ".Food",
-    toggleActions: "restart pause resumee complete",
+ScrollTrigger.create({
+  trigger: ".Food",
+  markers: true,
+  start: "top 50%",
+  end: "bottom 0%",
+  onEnter: () => {
+    gsap.to(".Food", { duration: 1.0, backgroundColor: "#e7e7bd" });
   },
-  backgroundColor: "#FFFFFF",
-  ease: "none",
-  duration: 1,
-}).to(".Food", {
-  ScrollTrigger: {
-    trigger: ".Food",
-    scrub: true,
-    end: ".Tours",
-    toggleActions: "restart pause resumee complete",
+  onLeaveBack: () => {
+    gsap.to(".Food", { duration: 1.0, backgroundColor: "#faf6d3" });
   },
-  backgroundColor: "#FFFFE0",
-  ease: "none",
-  duration: 1,
 });
