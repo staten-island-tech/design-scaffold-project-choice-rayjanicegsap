@@ -174,6 +174,7 @@ button {
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
+  border-style: solid;
 }
 .display-card {
   height: 70rem;
@@ -206,8 +207,8 @@ button {
 }
 
 .tours-image {
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 50rem;
   background-size: cover;
   overflow: hidden;
   border-radius: 4rem;
@@ -222,13 +223,14 @@ button {
   background-color: var(--primary-card);
 }
 .custom-image {
-  width: 80rem;
-  height: 35rem;
+  width: auto;
+  height: 50rem;
+  background-size: cover;
   overflow: hidden;
   border-radius: 4rem;
 }
 
-.info{
+.info {
   margin-left: 50%;
   font-size: 5rem;
   margin-top: 3rem;

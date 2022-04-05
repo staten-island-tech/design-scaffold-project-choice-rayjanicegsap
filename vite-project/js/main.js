@@ -14,19 +14,6 @@ DOMselectors.forEach((DOMselectors) => {
   });
 });
 
-document.querySelector(".btn1").addEventListener("click", function () {
-  if (document.body.classList.contains("warm")) {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
-});
-document.querySelector(".btn2").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  }
-});
-
 let cards = attractions;
 function insertCards() {
   cards.forEach((attractions) => {
@@ -86,7 +73,7 @@ function insertcustom() {
     document.getElementById("customsdisplay").insertAdjacentHTML(
       "beforeend",
       `<div class="display-custom">
-      <div class="display-card">
+      <div class="display-card-c">
            <h3 class="name">${custom.name}</h3>
            <img class="custom-image" src="${custom.imageurl}" />
            <h4 class="description">${custom.description}</h4>
@@ -94,33 +81,114 @@ function insertcustom() {
          </div>`
     );
   });
-};
+}
 
 insertcustom();
 
+document.querySelector(".btn1").addEventListener("click", function () {
+  if (document.body.classList.contains("warm")) {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+document.querySelector(".btn2").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  }
+});
 /* gsap scroll animations */
-ScrollTrigger.create({
-  trigger: ".Attractions",
-  markers: true,
-  start: "top 50%",
-  end: "bottom 0%",
-  onEnter: () => {
-    gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#faf6d3" });
-  },
-  onLeaveBack: () => {
-    gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#FFFFFF" });
-  },
-});
+function color() {
+  if ((document.body.classList = "warm")) {
+    ScrollTrigger.create({
+      trigger: ".Attractions",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#faf6d3" });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#FFFFFF" });
+      },
+    });
 
-ScrollTrigger.create({
-  trigger: ".Food",
-  markers: true,
-  start: "top 50%",
-  end: "bottom 0%",
-  onEnter: () => {
-    gsap.to(".Food", { duration: 1.0, backgroundColor: "#e7e7bd" });
-  },
-  onLeaveBack: () => {
-    gsap.to(".Food", { duration: 1.0, backgroundColor: "#faf6d3" });
-  },
-});
+    ScrollTrigger.create({
+      trigger: ".Food",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Food", { duration: 1.0, backgroundColor: "#e7f8bd" });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Food", { duration: 1.0, backgroundColor: "#faf6d3" });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".Tours",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Tours", { duration: 1.0, backgroundColor: "#f9f9ad" });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Tours", { duration: 1.0, backgroundColor: "#add8e6" });
+      },
+    });
+  } else if ((document.body.classList = "cool")) {
+    ScrollTrigger.create({
+      trigger: ".Attractions",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Attractions", {
+          duration: 1.0,
+          backgroundColor: "#hsl(227, 63%, 27%)",
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Attractions", {
+          duration: 1.0,
+          backgroundColor: "#add8e6",
+        });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".Food",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Food", {
+          duration: 1.0,
+          backgroundColor: "#hsl(227, 63%, 27%)",
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Food", { duration: 1.0, backgroundColor: "#faf6d3" });
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".Tours",
+      markers: true,
+      start: "top 50%",
+      end: "bottom 0%",
+      onEnter: () => {
+        gsap.to(".Tours", {
+          duration: 1.0,
+          backgroundColor: "#hsl(227, 63%, 27%)",
+        });
+      },
+      onLeaveBack: () => {
+        gsap.to(".Tours", { duration: 1.0, backgroundColor: "#add8e6" });
+      },
+    });
+  }
+}
+color();
