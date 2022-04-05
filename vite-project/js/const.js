@@ -119,7 +119,7 @@ const custom = [
     name: `Slapped By A Herring`,
     description: `During the year, places around France would hold festivals and carnivals. One of the key moments of the festivities is when 450 kilios of herring is tossed into the crowd. So if you ever get slapped with a herring, just know it was with good intentions.  `,
     imageurl:
-      "https://images.unsplash.com/photo-1547108509-6cac880a4d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80",
+      "https://images.unsplash.com/photo-1567087978459-8a8eeac7bc75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80",
   },
   {
     name: `Being Late To Events`,

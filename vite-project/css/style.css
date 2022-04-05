@@ -133,7 +133,7 @@ button {
   transform: translate(-50%, -50%);
   font-size: var(--h1);
   color: var(--primary);
-  text-shadow: 5px 5px var(--primary-shader);
+  text-shadow: 10px 3px var(--primary-shader);
   text-align: center;
 }
 
@@ -176,6 +176,8 @@ button {
   border-radius: 4rem;
   border-style: solid;
 }
+
+
 .display-card {
   height: 70rem;
   flex: 12.5rem;
@@ -234,4 +236,45 @@ button {
   margin-left: 50%;
   font-size: 5rem;
   margin-top: 3rem;
+}
+
+@media only screen and (min-width: 350px) {
+
+  .container {
+    width: 125%;
+  }
+  
+  .Paris-top {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  .Paris-bottom {
+    font-size: 5rem;
+    margin-left: 36%;
+    margin-right: 36%;
+  }
+
+  .headers {
+    text-align: center;
+    text-shadow: 5px 5px var(--primary-shader);
+    font-size: 7rem;
+  }
+
+  .display-card {
+    height: 80rem;
+    padding: 2rem;
+  }
+
+  .name {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    margin-right: 28%;
+
+  }
+
+  .image {
+    width: 40rem;
+    height: 30rem;
+    border-radius: 4rem;
+  }
 }
