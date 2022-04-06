@@ -14,6 +14,19 @@ DOMselectors.forEach((DOMselectors) => {
   });
 });
 
+//Changes Between Themes
+document.querySelector(".btn1").addEventListener("click", function () {
+  if (document.body.classList.contains("warm")) {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+document.querySelector(".btn2").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  }
+});
 let cards = attractions;
 function insertCards() {
   cards.forEach((attractions) => {
@@ -61,6 +74,7 @@ function inserttours() {
            <img class="tours-image" src="${tours.imageurl}" />
            <h4 class="description">${tours.description}</h4>
            <h4 class="price">Price: $${tours.price} as of 03/01/2022</h4>
+           <button class="tourbutton" >Tour</button>
            </div></div>`
     );
   });
@@ -85,8 +99,10 @@ function insertcustom() {
 
 insertcustom();
 
-/* gsap scroll animations */
 
+
+/* gsap scroll animations */
+ 
 ScrollTrigger.create({
   trigger: ".Attractions",
   markers: true,
@@ -125,3 +141,4 @@ ScrollTrigger.create({
     gsap.to(".Tours", { duration: 1.0, backgroundColor: "#add8e6" });
   },
 });
+ 
