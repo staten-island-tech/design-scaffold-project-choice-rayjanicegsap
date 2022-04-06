@@ -27,15 +27,6 @@ body,
   --h5: 1rem;
 }
 
-.cool {
-  --primary: var(--blue);
-  --primary-shader: var(--gray);
-  --primary-fontcolor: var(--white);
-  --primary-button: var(--blue);
-  --primary-secondary: var(--pink);
-  --primary-card: var(--pink);
-}
-
 .warm {
   --primary: var(--yellow);
   --primary-shader: var(--gray);
@@ -118,6 +109,14 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100rem;
+  transition-duration: 500ms;
+  z-index: index 0;
+}
+.container:hover .center {
+  opacity: 0;
+}
+.container:hover {
+  transform: scale(1.2);
 }
 .Paris-top {
   font-size: 15rem;
@@ -146,7 +145,9 @@ button {
   background-color: var(--primary);
   padding: 3rem;
 }
-
+#Attractions {
+  z-index: 9;
+}
 .image {
   width: 40rem;
   height: 30rem;
@@ -174,9 +175,7 @@ button {
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
-  border-style: solid;
 }
-
 
 .display-card {
   height: 70rem;
@@ -239,11 +238,10 @@ button {
 }
 
 @media only screen and (min-width: 350px) {
-
   .container {
     width: 125%;
   }
-  
+
   .Paris-top {
     margin-left: 40%;
     margin-right: 40%;
@@ -269,7 +267,6 @@ button {
     font-size: 4rem;
     padding-bottom: 1rem;
     margin-right: 28%;
-
   }
 
   .image {
