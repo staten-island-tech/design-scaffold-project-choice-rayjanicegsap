@@ -11,12 +11,10 @@ body,
   /*Custom Color Properties*/
   --blue: hsl(227, 63%, 27%);
   --yellow: #faf6d3;
-  --dark-yellow: #b1b27a;
   --gray: #aa9898;
   --black: #fffff;
   --white: #ffff;
   --pink: #fbdddd;
-  --coral: #f09b9b;
   --indigo: #171140;
   --gray-blue: #40587b;
 
@@ -199,6 +197,7 @@ button {
 .AboutUs {
   color: var(--primary-fontcolor);
   background-color: var(--primary);
+  
   padding: 3rem;
 }
 #Attractions {
@@ -241,15 +240,19 @@ button {
   margin: 0.625rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  
 }
 .name {
   font-size: 5rem;
   padding-bottom: 1rem;
   text-align: center;
+  text-shadow: 5px 5px var(--primary-secondary);
+  
 }
 .description {
   font-size: 3.55rem;
   padding-top: 1.75rem;
+  text-shadow: 5px 5px var(--primary-secondary);
 }
 
 .headers {
@@ -276,7 +279,8 @@ button {
   height: 50%;
   padding: 2rem;
   text-align: center;
-  margin: 6rem;
+  margin-left: 26rem;
+  margin-right: 26rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
 }
@@ -303,6 +307,8 @@ button {
   border-radius: 4rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  text-decoration: none;
+  color: var(--primary-fontcolor);
 }
 
 /* @media only screen and (min-width: 350px) {

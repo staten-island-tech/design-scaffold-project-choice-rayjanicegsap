@@ -9,11 +9,11 @@ const DOMselectors = [
   },
   {
     Header: document.getElementById("Tours"),
-    btn: document.getElementById("btn3"),
+    btn: document.getElementById("btn4"),
   },
   {
     Header: document.getElementById("Customs"),
-    btn: document.getElementById("btn4"),
+    btn: document.getElementById("btn3"),
   },
   {
     Header: document.getElementById("Aboutus"),
@@ -81,14 +81,17 @@ const tours = [
   {
     name: `Lido de Paris Cabaret`,
     description: `Spend an evening dinner with a three course meal while enjoying the new “Paris Merveilles” show.Enjoy an evening watching one of Paris’ productions while sampling from a menu of French specialties.`,
-    price: 90.38,
+    price: 87.93,
+    link: "https://www.viator.com/tours/Paris/Lido-de-Paris-Cabaret-Paris-Merveilles-Show/d479-5091LIDOPARIS",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b3/ac/65.jpg",
+    
   },
   {
     name: `Disneyland`,
     description: `Enjoy a day at both Disneyland Park and Walt Disney Studios. Experience attractions, shows, parades, along with meet ‘n’ greet. `,
-    price: 67.21,
+    price: 62.10,
+    link:"https://www.viator.com/tours/Paris/Disneyland-Paris-1-Day-Ticket/d479-5307DISNEYMAGIC",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/10/cc/34.jpg",
   },
@@ -96,6 +99,7 @@ const tours = [
     name: `Normandy D-Day Trip`,
     description: `Enjoy a day exploring the beaches of Normdany. Enjoy a day full of sightseeing with a cup of cider and a luncheon at noon.`,
     price: 192.51,
+    link: "https://www.viator.com/tours/Paris/Normandy-D-Day-Landing-Beaches-Tour-including-Omaha-Beach-Cider-Tasting-and-Lunch/d479-3731NORMANDY",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/1a/79/12.jpg",
   },
@@ -103,6 +107,7 @@ const tours = [
     name: `Champagne Fields`,
     description: `Spend an day toruing the Champagne region of Paris. Enjoy a gourmet meal with Champagne tasting throughout the day.`,
     price: 306.43,
+    link: "https://www.viator.com/tours/Paris/Champagne-WineDay-Tour/d479-35428P1",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/8f/aa.jpg",
   },
