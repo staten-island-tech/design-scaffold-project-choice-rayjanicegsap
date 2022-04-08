@@ -231,6 +231,7 @@ button {
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
+  background-color: var(--primary-card);
 }
 
 .display-card {
@@ -310,44 +311,54 @@ button {
   color: var(--primary-fontcolor);
 }
 
-/* @media only screen and (min-width: 350px) {
-  .container {
-    width: 125%;
-  }
-.header {
-  flex-direction: column;
+ @media only screen and (max-width: 425px) {
+ .Paris-bottom{
+   margin-left: 50rem;
+   margin-right: 50rem;
+   font-size: 4rem;
+ }
+ .container {
+  width: 150%;
 }
-  .Paris-top {
-    margin-left: 40%;
-    margin-right: 40%;
-  }
-  .Paris-bottom {
-    font-size: 5rem;
-    margin-left: 36%;
-    margin-right: 36%;
-  }
 
-  .headers {
-    text-align: center;
-    text-shadow: 5px 5px var(--primary-shader);
-    font-size: 7rem;
-  }
-
-  .display-card {
-    height: 80rem;
-    padding: 2rem;
-  }
-
-  .name {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    margin-right: 28%;
-  }
-
-  .image {
-    width: 40rem;
-    height: 30rem;
-    border-radius: 4rem;
-  }
+.display-card {
+  height: 80rem;
 }
- */
+
+.image {
+  width: 35rem;
+  height: 20rem;
+}
+
+.display-food {
+  height: 70rem;
+  padding: 2.75rem;
+  margin-left: -5.5rem;
+}
+.food-image {
+  width: 35rem;
+  height: 20rem;
+}
+.custom-image {
+  width: 35rem;
+  height: 20rem;
+}
+.display-custom {
+  height: 90rem;
+  width: 40rem;
+  margin-left: -2rem;
+}
+.tours-image {
+  width: 35rem;
+  height: 20rem;
+}
+
+.tours-card {
+  height: 77rem;
+  width: 40rem;
+  margin-left: 1rem;
+  
+}
+
+
+}
