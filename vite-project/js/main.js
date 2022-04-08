@@ -99,10 +99,8 @@ function inserttours() {
 }
 inserttours();
 
-
-
 /* gsap scroll animations */
- 
+
 ScrollTrigger.create({
   trigger: ".Attractions",
   markers: true,
@@ -112,7 +110,10 @@ ScrollTrigger.create({
     gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#faf6d3" });
   },
   onLeaveBack: () => {
-    gsap.to(".Attractions", { duration: 1.0, backgroundColor: /*"#FFFFFF" */ "#B1B27A"  });
+    gsap.to(".Attractions", {
+      duration: 1.0,
+      backgroundColor: /*"#FFFFFF" */ "#B1B27A",
+    });
   },
 });
 
@@ -122,10 +123,16 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Food", { duration: 1.0, backgroundColor: /* "#e7f8bd" */ "#faf6d3"});
+    gsap.to(".Food", {
+      duration: 1.0,
+      backgroundColor: /* "#e7f8bd" */ "#faf6d3",
+    });
   },
   onLeaveBack: () => {
-    gsap.to(".Food", { duration: 1.0, backgroundColor: /* "#faf6d3" */ "#B1B27A" });
+    gsap.to(".Food", {
+      duration: 1.0,
+      backgroundColor: /* "#faf6d3" */ "#B1B27A",
+    });
   },
 });
 
@@ -141,7 +148,6 @@ ScrollTrigger.create({
     gsap.to(".Customs", { duration: 1.0, backgroundColor: "#B1B27A" });
   },
 });
- 
 
 ScrollTrigger.create({
   trigger: ".Tours",
@@ -149,13 +155,18 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Tours", { duration: 1.0, backgroundColor: /*"#f9f9ad"*/ "#faf6d3" });
+    gsap.to(".Tours", {
+      duration: 1.0,
+      backgroundColor: /*"#f9f9ad"*/ "#faf6d3",
+    });
   },
   onLeaveBack: () => {
-    gsap.to(".Tours", { duration: 1.0, backgroundColor: /*"#add8e6" */ "#B1B27A" });
+    gsap.to(".Tours", {
+      duration: 1.0,
+      backgroundColor: /*"#add8e6" */ "#B1B27A",
+    });
   },
 });
- 
 
 ScrollTrigger.create({
   trigger: ".AboutUs",
@@ -169,4 +180,3 @@ ScrollTrigger.create({
     gsap.to(".AboutUs", { duration: 1.0, backgroundColor: "#B1B27A" });
   },
 });
- 
