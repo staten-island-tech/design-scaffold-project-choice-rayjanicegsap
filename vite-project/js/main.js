@@ -86,14 +86,13 @@ function inserttours() {
   tourcards.forEach((tours) => {
     document.getElementById("tourdisplay").insertAdjacentHTML(
       "beforeend",
-      `<div class="display-food">
-      <div class="tours-card">
+      `   <div class="tours-card">
            <h3 class="name">${tours.name}</h3>
            <img class="tours-image" src="${tours.imageurl}" />
            <h4 class="description">${tours.description}</h4>
            <h4 class="price">Price: $${tours.price} as of 03/01/2022</h4>
            <a href="${tours.link}" target="_blank" class="tourbutton"><button>Tour</button></a>
-           </div></div>`
+           </div>`
     );
   });
 }

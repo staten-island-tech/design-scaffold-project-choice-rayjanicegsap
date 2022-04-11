@@ -82,7 +82,7 @@ li {
     var(--underline-width, 0%) 0.75rem no-repeat;
   color: var(--primary-fontcolor);
   display: inline-block;
-  padding: 0 6.415rem 2.3rem;
+  padding: 0 7.925rem 2.3rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -198,7 +198,6 @@ button {
 .AboutUs {
   color: var(--primary-fontcolor);
   background-color: var(--primary);
-
   padding: 3rem;
 }
 #Attractions {
@@ -215,6 +214,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 6.25rem;
 }
 
 .display-food {
@@ -239,10 +239,16 @@ button {
   flex: 12.5rem;
   padding: 2.75rem;
   text-align: center;
-  margin: 0.625rem;
+  margin-bottom: 6.25rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
 }
+.footer{
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+}
+
 .name {
   font-size: 5rem;
   padding-bottom: 1rem;
@@ -283,6 +289,8 @@ button {
   margin-right: 26rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  margin: 6.25rem;
+
 }
 .custom-image {
   width: auto;
@@ -314,8 +322,11 @@ button {
  @media only screen and (max-width: 425px) {
  .Paris-bottom{
    margin-left: 50rem;
-   margin-right: 50rem;
+   margin-right: 70rem;
    font-size: 4rem;
+ }
+ .Paris-top{
+   margin-right: 22.5rem;
  }
  .container {
   width: 150%;
@@ -323,6 +334,8 @@ button {
 
 .display-card {
   height: 80rem;
+  margin-left: -2.25rem;
+  
 }
 
 .image {
@@ -333,7 +346,7 @@ button {
 .display-food {
   height: 70rem;
   padding: 2.75rem;
-  margin-left: -5.5rem;
+  margin-left: -2.75rem;
 }
 .food-image {
   width: 35rem;
@@ -347,6 +360,7 @@ button {
   height: 90rem;
   width: 40rem;
   margin-left: -2rem;
+
 }
 .tours-image {
   width: 35rem;
@@ -354,11 +368,18 @@ button {
 }
 
 .tours-card {
-  height: 77rem;
+  height: 80rem;
   width: 40rem;
-  margin-left: 1rem;
-  
+  margin-left: -2rem;
+  flex: 12.5rem;
+
+  text-align: center;
+;
 }
 
+.info{
+  font-size: 2.75rem;
+  margin-left: 1rem;
+}
 
 }

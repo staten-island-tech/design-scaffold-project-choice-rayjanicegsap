@@ -80,7 +80,7 @@ const foods = [
 const tours = [
   {
     name: `Lido de Paris Cabaret`,
-    description: `Spend an evening dinner with a three course meal while enjoying the new “Paris Merveilles” show.Enjoy an evening watching one of Paris’ productions while sampling from a menu of French specialties.`,
+    description: `Spend an evening dinner with a three course meal while enjoying the new “Paris Merveilles” show.`,
     price: 87.93,
     link: "https://www.viator.com/tours/Paris/Lido-de-Paris-Cabaret-Paris-Merveilles-Show/d479-5091LIDOPARIS",
     imageurl:
