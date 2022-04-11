@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 DOMselectors.forEach((DOMselectors) => {
   DOMselectors.btn.addEventListener("click", function () {
-    DOMselectors.Header.scrollIntoView();
+    DOMselectors.Header.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 });
 

@@ -1,22 +1,22 @@
 const DOMselectors = [
   {
-    Header: document.getElementById("Attractions"),
+    Header: document.getElementById("anchor1"),
     btn: document.getElementById("btn1"),
   },
   {
-    Header: document.getElementById("Food"),
+    Header: document.getElementById("anchor2"),
     btn: document.getElementById("btn2"),
   },
   {
-    Header: document.getElementById("Tours"),
-    btn: document.getElementById("btn4"),
-  },
-  {
-    Header: document.getElementById("Customs"),
+    Header: document.getElementById("anchor3"),
     btn: document.getElementById("btn3"),
   },
   {
-    Header: document.getElementById("Aboutus"),
+    Header: document.getElementById("anchor4"),
+    btn: document.getElementById("btn4"),
+  },
+  {
+    Header: document.getElementById("anchor5"),
     btn: document.getElementById("btn5"),
   },
   {
@@ -85,13 +85,12 @@ const tours = [
     link: "https://www.viator.com/tours/Paris/Lido-de-Paris-Cabaret-Paris-Merveilles-Show/d479-5091LIDOPARIS",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b3/ac/65.jpg",
-    
   },
   {
     name: `Disneyland`,
     description: `Enjoy a day at both Disneyland Park and Walt Disney Studios. Experience attractions, shows, parades, along with meet ‘n’ greet. `,
-    price: 62.10,
-    link:"https://www.viator.com/tours/Paris/Disneyland-Paris-1-Day-Ticket/d479-5307DISNEYMAGIC",
+    price: 62.1,
+    link: "https://www.viator.com/tours/Paris/Disneyland-Paris-1-Day-Ticket/d479-5307DISNEYMAGIC",
     imageurl:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/10/cc/34.jpg",
   },
