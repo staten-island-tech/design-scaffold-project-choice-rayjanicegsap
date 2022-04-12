@@ -228,11 +228,13 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 6.25rem;
+  
+  
 }
 
 .display-food {
   flex: 12.5rem;
-  padding: 1rem;
+  padding: 3rem;
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
@@ -331,17 +333,25 @@ button {
   color: var(--primary-fontcolor);
 }
 
+
+
+.footer{
+ margin-left: 50%;
+  text-decoration: none;
+  color: var(--primary-fontcolor);
+}
 @media only screen and (max-width: 425px) {
   .Paris-bottom {
     margin-left: 50rem;
-    margin-right: 70rem;
+    margin-right: 50rem;
     font-size: 4rem;
   }
-  .Paris-top {
-    margin-right: 22.5rem;
+
+  .footer{
+    margin-left: 10rem;
   }
   .container {
-    width: 150%;
+    width: 100%;
   }
 
   .display-card {
@@ -376,7 +386,9 @@ button {
     width: 35rem;
     height: 20rem;
   }
-
+.headers{
+  margin-left: -1.25rem;
+}
   .tours-card {
     height: 80rem;
     width: 40rem;
