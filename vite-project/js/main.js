@@ -102,7 +102,7 @@ inserttours();
 
 ScrollTrigger.create({
   trigger: ".Attractions",
-  markers: true,
+
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
@@ -118,7 +118,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".Food",
-  markers: true,
+
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
@@ -137,7 +137,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".Customs",
-  markers: true,
+
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
@@ -150,7 +150,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".Tours",
-  markers: true,
+
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
@@ -169,7 +169,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".AboutUs",
-  markers: true,
+
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
@@ -180,20 +180,25 @@ ScrollTrigger.create({
   },
 });
 
+const menu = document.querySelector(".header-list");
+const menuItems = document.querySelectorAll(".nav-link");
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".header-list1");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
-const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}
+hamburger.addEventListener("click", toggleMenu);
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
