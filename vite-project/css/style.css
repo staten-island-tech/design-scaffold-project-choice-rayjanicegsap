@@ -74,13 +74,12 @@ ul {
 
 li {
   margin-left: 2.474rem;
-  font-size: var(--h4);
-  display: block;
+  height: 7.5rem;
+  font-size: 6rem;  
   text-align: center;
   color: var(--primary-fontcolor);
   background: linear-gradient(currentColor 0 0) bottom left/
-    var(--underline-width, 0%) 0.75rem no-repeat;
-  color: var(--primary-fontcolor);
+    var(--underline-width, 0%) 0.55rem no-repeat;
   display: inline-block;
   padding: 0 2rem 2.3rem;
   text-decoration: none;
@@ -89,25 +88,29 @@ li {
 li:hover {
   --underline-width: 100%;
 }
+.footer {
+  font-size: 3rem;
+}
+
+.footer2{
+  font-size: 3rem;
+  padding-left: 5rem;
+  text-decoration: none;
+  color: var(--primary-fontcolor);
+} 
 button {
   all: unset;
   cursor: pointer;
 }
+
 .header {
   background-color: var(--primary);
-  height: 10rem;
   position: fixed;
   flex-direction: row;
   z-index: 10;
   float: right;
 }
-#Paris {
-  float: left;
-  margin-left: 1.25rem;
-  margin-right: 1.54rem;
-  color: var(--primary-fontcolor);
-  font-size: var(--h2);
-}
+
 
 .header-list {
   float: right;
@@ -204,7 +207,22 @@ button {
   text-shadow: 0.625rem 0.188rem var(--primary-shader);
   text-align: center;
 }
+.nav-link,
+.btn1,
+.btn2{
 
+  font-size: 5rem;
+}
+
+#Paris{
+  margin-left: 1.25rem;
+  margin-right: 20rem;
+  margin-left: 2.474rem;
+  height: 7rem;
+  font-size: 6rem;
+  text-align: center;
+
+}
 .Attractions,
 .Food,
 .Tours,
@@ -256,11 +274,6 @@ button {
   margin-bottom: 6.25rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
-}
-.footer {
-  text-align: center;
-  padding-top: 5rem;
-  font-size: 3rem;
 }
 
 .name {
