@@ -91,6 +91,7 @@ progress::-webkit-progress-value {
   border-color: white;
   border-radius: 10px;
 }
+
 li {
   margin-left: 2.474rem;
   height: 7.5rem;
@@ -111,12 +112,6 @@ li:hover {
   font-size: 3rem;
 }
 
-.footer2 {
-  font-size: 3rem;
-  padding-left: 5rem;
-  text-decoration: none;
-  color: var(--primary-fontcolor);
-}
 button {
   all: unset;
   cursor: pointer;
@@ -359,6 +354,24 @@ button {
   text-decoration: none;
   color: var(--primary-fontcolor);
 }
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+.closeIcon {
+  display: none;
+}
+.showMenu {
+  transform: translateY(0);
+}
+
 @media only screen and (max-width: 425px) {
   .Paris-bottom {
     margin-left: 50rem;
@@ -421,20 +434,32 @@ button {
     font-size: 2.75rem;
     margin-left: 1rem;
   }
-}
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
+  .hamburger{
+    position: fixed;
+    margin-right: 56.5%;
+    margin-top: 0.75%;
   cursor: pointer;
+  overflow: hidden;
+  top: 0;
+    
+  }
+.nav-link,
+#nav-link{
+  font-size: 2rem;
 }
-.closeIcon {
-  display: none;
+li{
+  margin-right: 30rem;
+  padding-right: 10rem;
 }
-.showMenu {
-  transform: translateY(0);
+}
+@media only screen and (max-width: 768px) {
+  .Paris-bottom{
+    margin-right: 65rem;
+    margin-left: 35.9rem;
+    font-size: 4.5rem;
+  }
+  .Paris-top{
+    margin-right: 27rem;
+  }
+
 }
