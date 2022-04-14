@@ -179,7 +179,12 @@ ScrollTrigger.create({
     gsap.to(".AboutUs", { duration: 1.0, backgroundColor: "#B1B27A" });
   },
 });
-
+gsap.to("progress", {
+  value: 100,
+  ease: "none",
+  scrollTrigger: { scrub: 0.3 },
+});
+/* hamburger icon */
 const menu = document.querySelector(".header-list");
 const menuItems = document.querySelectorAll(".nav-link");
 const hamburger = document.querySelector(".hamburger");
