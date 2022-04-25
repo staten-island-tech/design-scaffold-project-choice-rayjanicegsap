@@ -92,9 +92,167 @@ progress::-webkit-progress-value {
   border-radius: 10px;
 }
 
-li {
+/*Hover Animations*/
+/* Attraction Images */
+@-webkit-keyframes image {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes image {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.image {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.image:hover, .image:focus, .image:active {
+  -webkit-animation-name: image;
+  animation-name: image;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* Tours Images */
+@-webkit-keyframes tours-image {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes tours-image {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.tours-image {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.tours-image:hover, .tours-image:focus, .tours-image:active {
+  -webkit-animation-name: tours-image;
+  animation-name: tours-image;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* Custom Images */
+@-webkit-keyframes custom-image {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes custom-image {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.custom-image {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.custom-image:hover, .custom-image:focus, .custom-image:active {
+  -webkit-animation-name: custom-image;
+  animation-name: custom-image;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Food Images */
+.food-image {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.food-image:hover, .food-image:focus, .food-image:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Reveal */
+.tourbutton {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.tourbutton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-color: var(--primary-shader);
+  border-style: solid;
+  border-width: 0;
+  -webkit-transition-property: border-width;
+  transition-property: border-width;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.tourbutton:hover:before, .tourbutton:focus:before, .tourbutton:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  border-width: 4px;
+}
+
+
+ li {
   height: 7.5rem;
-  margin: 1rem;
+  margin: 2rem;
   font-size: 6rem;
   text-align: center;
   color: var(--primary-fontcolor);
@@ -107,7 +265,7 @@ li {
 }
 li:hover {
   --underline-width: 10%;
-}
+} 
 .footer {
   font-size: 3rem;
 }
@@ -196,6 +354,8 @@ button {
     transform: scale(1);
   }
 }
+
+
 .Paris-top {
   font-size: 15rem;
 }
@@ -252,7 +412,8 @@ button {
 
 .display-food {
   flex: 12.5rem;
-  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
@@ -340,7 +501,6 @@ button {
 .tourbutton {
   font-size: 5rem;
   background-color: var(--primary-secondary);
-  border-radius: 4rem;
   padding-left: 3rem;
   padding-right: 3rem;
   text-decoration: none;
