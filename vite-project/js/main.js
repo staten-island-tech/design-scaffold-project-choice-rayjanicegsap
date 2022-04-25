@@ -179,6 +179,7 @@ ScrollTrigger.create({
     gsap.to(".AboutUs", { duration: 1.0, backgroundColor: "#B1B27A" });
   },
 });
+
 gsap.to("progress", {
   value: 100,
   ease: "none",
