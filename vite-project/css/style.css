@@ -113,7 +113,9 @@ progress::-webkit-progress-value {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.image:hover, .image:focus, .image:active {
+.image:hover,
+.image:focus,
+.image:active {
   -webkit-animation-name: image;
   animation-name: image;
   -webkit-animation-duration: 0.3s;
@@ -146,7 +148,9 @@ progress::-webkit-progress-value {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.tours-image:hover, .tours-image:focus, .tours-image:active {
+.tours-image:hover,
+.tours-image:focus,
+.tours-image:active {
   -webkit-animation-name: tours-image;
   animation-name: tours-image;
   -webkit-animation-duration: 0.3s;
@@ -187,7 +191,9 @@ progress::-webkit-progress-value {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.custom-image:hover, .custom-image:focus, .custom-image:active {
+.custom-image:hover,
+.custom-image:focus,
+.custom-image:active {
   -webkit-animation-name: custom-image;
   animation-name: custom-image;
   -webkit-animation-duration: 0.15s;
@@ -210,7 +216,9 @@ progress::-webkit-progress-value {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.food-image:hover, .food-image:focus, .food-image:active {
+.food-image:hover,
+.food-image:focus,
+.food-image:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -243,14 +251,15 @@ progress::-webkit-progress-value {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.tourbutton:hover:before, .tourbutton:focus:before, .tourbutton:active:before {
+.tourbutton:hover:before,
+.tourbutton:focus:before,
+.tourbutton:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   border-width: 4px;
 }
 
-
- li {
+li {
   height: 7.5rem;
   margin: 2rem;
   font-size: 6rem;
@@ -265,7 +274,7 @@ progress::-webkit-progress-value {
 }
 li:hover {
   --underline-width: 10%;
-} 
+}
 .footer {
   font-size: 3rem;
 }
@@ -355,7 +364,6 @@ button {
   }
 }
 
-
 .Paris-top {
   font-size: 15rem;
 }
@@ -372,6 +380,7 @@ button {
   color: var(--primary);
   text-shadow: 0.625rem 0.188rem var(--primary-shader);
   text-align: center;
+  align-items: center;
 }
 .nav-link,
 .btn1,
@@ -611,11 +620,18 @@ button {
 }
 @media only screen and (max-width: 768px) {
   .Paris-bottom {
-    margin-right: 65rem;
-    margin-left: 35.9rem;
     font-size: 4.5rem;
   }
-  .Paris-top {
-    margin-right: 27rem;
+
+  .container {
+    background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100rem;
+    z-index: 0;
+  }
+  .AboutUs {
+    font-size: var(--h4);
   }
 }
