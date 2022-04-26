@@ -15,13 +15,13 @@ DOMselectors.forEach((DOMselectors) => {
 });
 
 //Changes Between Themes
-document.querySelector(".btn1").addEventListener("click", function () {
+document.getElementById("dark").addEventListener("click", function () {
   if (document.body.classList.contains("warm")) {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
   }
 });
-document.querySelector(".btn2").addEventListener("click", function () {
+document.getElementById("light").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
