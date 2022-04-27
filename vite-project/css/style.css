@@ -84,10 +84,10 @@ progress::-webkit-progress-bar {
   background: none;
 }
 progress::-webkit-progress-value {
-  background-color: black;
+  background: linear-gradient(to right, black, white);
   border: solid;
   border-color: white;
-  border-radius: 0.625rem;
+  border-radius: 0.5rem;
 }
 
 /*Hover Animations*/
@@ -538,7 +538,6 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-  
   .Paris-bottom {
     margin-left: 50rem;
     margin-right: 50rem;
@@ -619,7 +618,7 @@ button {
   }
 
   .info,
-  .footer{
+  .footer {
     text-align: center;
   }
 }
