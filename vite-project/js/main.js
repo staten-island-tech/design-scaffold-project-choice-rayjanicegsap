@@ -51,7 +51,7 @@ function insert() {
     document.getElementById("fooddisplay").insertAdjacentHTML(
       "beforeend",
       `<div class="display-food">
-      <div class="display-card">
+      <div class="">
            <h3 class="name">${foods.name}</h3>
            <img class="food-image" src="${foods.imageurl}" />
            <h4 class="description">${foods.description}</h4>

@@ -259,7 +259,7 @@ progress::-webkit-progress-value {
 
 li {
   height: 7.5rem;
-  margin: 2rem;
+  margin: 1.2rem;
   font-size: 6rem;
   text-align: center;
   color: var(--primary-fontcolor);
@@ -364,21 +364,18 @@ button {
 
 .Paris-top {
   font-size: 15rem;
+
 }
 .Paris-bottom {
   font-size: var(--h2);
 }
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150rem;
-  transform: translate(-50%, -50%);
+  position: relative;
   font-size: var(--h1);
   color: var(--primary);
   text-shadow: 0.625rem 0.188rem var(--primary-shader);
   text-align: center;
-  align-items: center;
+
 }
 .nav-link,
 .btn1,
@@ -424,6 +421,7 @@ button {
   text-align: center;
   margin: 9rem;
   border-radius: 4rem;
+  background-color: var(--primary-card);
 }
 
 .display-custom {
@@ -538,28 +536,22 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-  .Paris-bottom {
-    margin-left: 50rem;
-    margin-right: 50rem;
-    font-size: 4rem;
-  }
 
   .footer {
     margin-left: 10rem;
   }
-  .container {
-    width: 100%;
-  }
+
 
   .display-food {
     height: 70rem;
     padding: 2.75rem;
-    margin-left: -1.75rem;
+    margin-left: -2rem;
   }
 
   .display-card {
     height: 73rem;
-    margin-left: -2.25rem;
+    padding: 2.75rem;
+    margin-left: -2rem;
   }
 
   .image {
@@ -578,7 +570,7 @@ button {
   .display-custom {
     height: 90rem;
     width: 40rem;
-    margin-left: -2rem;
+    margin-left: -1.75rem;
   }
   .tours-image {
     width: 35rem;
@@ -590,7 +582,7 @@ button {
   .tours-card {
     height: 80rem;
     width: 40rem;
-    margin-left: -2rem;
+    margin-left: -1.75rem;
     flex: 12.5rem;
 
     text-align: center;
@@ -600,22 +592,8 @@ button {
     font-size: 2.75rem;
     margin-left: 1rem;
   }
-  .hamburger {
-    position: fixed;
-    margin-right: 56.5%;
-    margin-top: 0.75%;
-    cursor: pointer;
-    overflow: hidden;
-    top: 0;
-  }
-  .nav-link,
-  #nav-link {
-    font-size: 2rem;
-  }
-  li {
-    margin-right: 30rem;
-    padding-right: 10rem;
-  }
+ 
+
 
   .info,
   .footer {
