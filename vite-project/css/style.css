@@ -363,20 +363,21 @@ button {
 }
 
 .Paris-top {
+  padding-top: 30rem;
   font-size: 15rem;
-
 }
 .Paris-bottom {
   font-size: var(--h2);
 }
-.center {
+.container {
+  display: block;
   position: relative;
   font-size: var(--h1);
   color: var(--primary);
   text-shadow: 0.625rem 0.188rem var(--primary-shader);
   text-align: center;
-
 }
+
 .nav-link,
 .btn1,
 .btn2 {
@@ -536,11 +537,9 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-
   .footer {
     margin-left: 10rem;
   }
-
 
   .display-food {
     height: 70rem;
@@ -592,8 +591,6 @@ button {
     font-size: 2.75rem;
     margin-left: 1rem;
   }
- 
-
 
   .info,
   .footer {
