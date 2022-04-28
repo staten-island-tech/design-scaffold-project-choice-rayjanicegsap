@@ -174,7 +174,7 @@ progress::-webkit-progress-value {
 }
 @keyframes custom-image {
   50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(0.188rem) rotate(2deg);
     transform: translateX(0.188rem) rotate(2deg);
   }
   100% {
@@ -254,7 +254,7 @@ progress::-webkit-progress-value {
 .tourbutton:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  border-width: 4px;
+  border-width: 0.25rem;
 }
 
 li {
@@ -449,17 +449,17 @@ button {
   font-size: 5rem;
   padding-bottom: 1rem;
   text-align: center;
-  text-shadow: 5px 5px var(--primary-secondary);
+  text-shadow: 0.313rem 0.313rem var(--rimary-secondary);
 }
 .description {
   font-size: 3.55rem;
   padding-top: 1.75rem;
-  text-shadow: 5px 5px var(--primary-secondary);
+  text-shadow: 0.313rem 0.313rem var(--primary-secondary);
 }
 
 .headers {
   text-align: center;
-  text-shadow: 5px 5px var(--primary-shader);
+  text-shadow: 0.313rem 0.313rem var(--primary-shader);
 }
 
 .food-image {
@@ -524,8 +524,8 @@ button {
   z-index: 100;
   top: 1rem;
   right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
+  padding: 0.25rem;
+  border: black solid 0.063rem;
   background: white;
   cursor: pointer;
 }
@@ -539,6 +539,12 @@ button {
 @media only screen and (max-width: 425px) {
   .footer {
     margin-left: 10rem;
+  }
+  .container {
+    background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
+  }
+  .Paris-bottom {
+    font-size: 4rem;
   }
 
   .display-food {
@@ -597,20 +603,23 @@ button {
     text-align: center;
   }
 }
-@media only screen and (max-width: 768px) {
-  .Paris-bottom {
-    font-size: 4.5rem;
-  }
 
+@media only screen and (min-width: 820px) {
+  .Paris-bottom {
+    font-size: 5rem;
+  }
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100rem;
-    z-index: 0;
   }
-  .AboutUs {
-    font-size: var(--h4);
+  .custom-image {
+    width: 35rem;
+    height: 20rem;
   }
+  .tours-image {
+    width: 55rem;
+  }
+/*   .display-card{
+    width: 35rem;
+  } */
+
 }
