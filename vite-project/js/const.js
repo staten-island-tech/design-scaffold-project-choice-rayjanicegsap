@@ -114,7 +114,7 @@ const tours = [
 
 const custom = [
   {
-    name: `Never Take Wine To A Dinner Party`,
+    name: `Never Taking Wine To A Dinner Party`,
     description: `It is a French custom to never bring wine to a dinner party. The host has carefully chosen a bottle of wine for the evening. By bringing your own bottle you are imply that you have no trust in the host’s taste.`,
     imageurl:
       "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",

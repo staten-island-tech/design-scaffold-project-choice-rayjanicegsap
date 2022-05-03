@@ -315,7 +315,7 @@ button {
   height: 100rem;
   z-index: 0;
 }
-.container:hover .center {
+/* .container:hover .center {
   opacity: 0;
   transition-duration: 500ms;
   animation-name: v1;
@@ -335,7 +335,7 @@ button {
   transform: scale(1);
   transition-duration: 500ms;
   animation-name: reverse2;
-}
+} */
 @keyframes v1 {
   from {
     opacity: 1;
@@ -423,6 +423,8 @@ button {
   margin: 9rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  
+
 }
 
 .display-custom {
@@ -544,20 +546,22 @@ button {
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
+
   .Paris-bottom {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .display-food {
     height: 70rem;
-    padding: 2.75rem;
-    margin-left: -2rem;
+    margin-left: -1.75rem;
+    width: 40rem;
+    
   }
 
   .display-card {
-    height: 73rem;
-    padding: 2.75rem;
-    margin-left: -2rem;
+    height: 70rem;
+    width: 40rem;
+    margin-left: -1.75rem;
   }
 
   .image {
@@ -573,25 +577,23 @@ button {
     width: 35rem;
     height: 20rem;
   }
-  .display-custom {
-    height: 90rem;
-    width: 40rem;
-    margin-left: -1.75rem;
-  }
   .tours-image {
     width: 35rem;
     height: 20rem;
   }
-  .headers {
-    margin-left: -1.25rem;
-  }
-  .tours-card {
-    height: 80rem;
+  .display-custom {
+    height: 75rem;
     width: 40rem;
     margin-left: -1.75rem;
-    flex: 12.5rem;
+  }
 
-    text-align: center;
+  .headers {
+  margin-left: -1rem;  
+  }
+  .tours-card {
+    height: 75rem;
+    width: 40rem;
+    margin-left: -1.75rem;
   }
 
   .info {
@@ -603,27 +605,44 @@ button {
   .footer {
     text-align: center;
   }
-}
 
-@media only screen and (max-width: 820px) {
-  .Paris-bottom {
-    font-size: 5rem;
+  .description{
+    font-size: 3rem;
   }
+
+}
+@media only screen and (max-width: 768px) {
+
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
+  .display-card {
+    height: 50rem;
+    width: 30rem;
+
+  }
+  .image{
+    height: 20rem;
+    width: 28rem;
+  }  
+
+  .name{
+    font-size: 3rem;
+  }
+  .description{
+    font-size: 2.5rem;
+  }
+
   .custom-image {
     width: 35rem;
     height: 20rem;
   }
   .tours-image {
-    width: 50rem;
-    height: auto;
-  }
-  .info {
-    font-size: var(--h3);
-  }
-  /*   .display-card{
     width: 35rem;
-  } */
+    height: 20rem;
+  }
+.info{
+  font-size: 3rem;
+}
+
 }
