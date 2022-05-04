@@ -185,6 +185,7 @@ gsap.to("progress", {
   ease: "none",
   scrollTrigger: { scrub: 0.3 },
 });
+
 /* hamburger icon */
 const menu = document.querySelector(".header-list");
 const menuItems = document.querySelectorAll(".nav-link");
