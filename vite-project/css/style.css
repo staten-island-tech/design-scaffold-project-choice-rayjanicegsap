@@ -550,6 +550,7 @@ button {
   .footer {
     margin-left: 10rem;
   }
+
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
@@ -559,15 +560,14 @@ button {
   }
 
   .display-food {
-    height: 70rem;
+    height: 50rem;
     margin-left: -1.75rem;
     width: 40rem;
   }
 
   .display-card {
     height: 70rem;
-    width: 40rem;
-    margin-left: -1.75rem;
+    width: 50rem;
   }
 
   .image {
@@ -588,16 +588,13 @@ button {
     height: 20rem;
   }
   .display-custom {
-    height: 75rem;
+    height: 55rem;
     width: 40rem;
     margin-left: -1.75rem;
   }
 
-  .headers {
-    margin-left: -1rem;
-  }
   .tours-card {
-    height: 75rem;
+    height: 60rem;
     width: 40rem;
     margin-left: -1.75rem;
   }
@@ -621,14 +618,17 @@ button {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
   .display-card {
-    height: 50rem;
+    height: 55rem;
     width: 30rem;
   }
   .image {
     height: 20rem;
     width: 28rem;
   }
-
+  .food-image {
+    height: 20rem;
+    width: 30rem;
+  }
   .name {
     font-size: 3rem;
   }
@@ -637,14 +637,27 @@ button {
   }
 
   .custom-image {
-    width: 35rem;
-    height: 20rem;
+    width: 40rem;
+    height: 25rem;
   }
   .tours-image {
-    width: 35rem;
-    height: 20rem;
+    width: 40rem;
+    height: 25rem;
   }
   .info {
     font-size: 3rem;
+    padding-bottom: 2rem;
   }
+  .display-food {
+    height: 45rem;
+    flex: 12.5rem;
+    margin-left: 15=0rem;
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+.info{
+  padding-bottom: 2rem;
+}
 }
