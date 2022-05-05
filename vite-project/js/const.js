@@ -26,13 +26,13 @@ const DOMselectors = [
 ];
 const attractions = [
   {
-    name: `The Eiffel Tower`,
+    name: `Eiffel Tower`,
     description: `A beautiful tower constructed out of iron beams. The heart of Paris. Next to the tower rests Champs de Mars Pont Alexandre III.`,
     imageurl:
       "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=srgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTY0Nzk2OTExMg&ixlib=rb-1.2.1&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450",
   },
   {
-    name: `The Louvre Museum`,
+    name: `Louvre Museum`,
     description: `The Louvre Museum is one of the most visited museums in the world, holding countless exhibits and rare art collections.`,
     imageurl:
       "https://images.unsplash.com/photo-1562115725-ebb30e8bc881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",

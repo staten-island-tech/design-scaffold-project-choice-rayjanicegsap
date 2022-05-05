@@ -273,16 +273,12 @@ li {
   font-size: 6rem;
   text-align: center;
   color: var(--primary-fontcolor);
-  background: linear-gradient(currentColor 0 0) bottom left/
-    var(--underline-width, 0%) 0.55rem no-repeat;
   display: inline;
   padding: 0 2rem 2.3rem;
   text-decoration: none;
   transition: background-size 0.5s;
 }
-li:hover {
-  --underline-width: 10%;
-}
+
 .footer {
   font-size: 3rem;
 }
