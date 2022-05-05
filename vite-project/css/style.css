@@ -547,10 +547,6 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-  .footer {
-    margin-left: 10rem;
-  }
-
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
@@ -560,48 +556,45 @@ button {
   }
 
   .display-food {
-    height: 50rem;
-    margin-left: -1.75rem;
+    height: auto;
+
     width: 40rem;
   }
 
   .display-card {
-    height: 70rem;
+    height: auto;
     width: 50rem;
   }
 
   .image {
     width: 35rem;
-    height: 20rem;
+    height: auto;
   }
 
   .food-image {
     width: 35rem;
-    height: 20rem;
+    height: auto;
   }
   .custom-image {
     width: 35rem;
-    height: 20rem;
+    height: auto;
   }
   .tours-image {
     width: 35rem;
-    height: 20rem;
+    height: auto;
   }
   .display-custom {
-    height: 55rem;
+    height: auto;
     width: 40rem;
-    margin-left: -1.75rem;
   }
 
   .tours-card {
-    height: 60rem;
+    height: auto;
     width: 40rem;
-    margin-left: -1.75rem;
   }
 
   .info {
     font-size: 2.75rem;
-    margin-left: 1rem;
   }
 
   .info,
@@ -613,20 +606,26 @@ button {
     font-size: 3rem;
   }
 }
+/* done */
 @media only screen and (max-width: 768px) {
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   }
+  .headers {
+    font-size: 5rem;
+  }
   .display-card {
-    height: 55rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    height: auto;
     width: 30rem;
   }
   .image {
-    height: 20rem;
-    width: 28rem;
+    height: auto;
+    width: 25rem;
   }
   .food-image {
-    height: 20rem;
+    height: auto;
     width: 30rem;
   }
   .name {
@@ -637,27 +636,42 @@ button {
   }
 
   .custom-image {
-    width: 40rem;
-    height: 25rem;
+    width: 25rem;
+    height: auto;
   }
   .tours-image {
-    width: 40rem;
-    height: 25rem;
+    width: 25rem;
+    height: auto;
   }
   .info {
     font-size: 3rem;
     padding-bottom: 2rem;
   }
   .display-food {
-    height: 45rem;
-    flex: 12.5rem;
-    margin-left: 15=0rem;
-    margin-right: 10rem;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+  }
+  .display-custom {
+    height: auto;
+    margin: auto;
+    width: 32rem;
+    margin-bottom: 4rem;
+  }
+  .tours-card {
+    height: auto;
+    margin: auto;
+    width: 32rem;
+    margin-bottom: 4rem;
+  }
+  .info {
+    font-size: var(--h4);
   }
 }
 
 @media only screen and (max-width: 1024px) {
-.info{
-  padding-bottom: 2rem;
-}
+  .info {
+    padding-bottom: 2rem;
+  }
 }
