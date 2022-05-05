@@ -556,13 +556,13 @@ button {
   }
 
   .display-food {
-    height: auto;
+    height: 50rem;
 
     width: 40rem;
   }
 
   .display-card {
-    height: auto;
+    height: 70rem;
     width: 50rem;
   }
 
@@ -599,7 +599,7 @@ button {
 
   .info,
   .footer {
-    text-align: center;
+    text-align: left;
   }
 
   .description {
