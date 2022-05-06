@@ -428,6 +428,9 @@ button {
   margin: 9rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  border: 0.5rem;
+  border-color: black;
+  border-style: solid;
 }
 
 .display-custom {
@@ -437,6 +440,9 @@ button {
   margin: 9rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  border: 0.5rem;
+  border-color: black;
+  border-style: solid;
 }
 
 .display-card {
@@ -448,6 +454,9 @@ button {
   margin-bottom: 6.25rem;
   border-radius: 4rem;
   background-color: var(--primary-card);
+  border: 0.5rem;
+  border-color: black;
+  border-style: solid;
 }
 
 .name {
@@ -492,6 +501,9 @@ button {
   border-radius: 4rem;
   background-color: var(--primary-card);
   margin: 6.25rem;
+  border: 0.5rem;
+  border-color: black;
+  border-style: solid;
 }
 .custom-image {
   width: auto;
@@ -558,7 +570,7 @@ button {
   }
 
   .display-card {
-    height: 70rem;
+    height: auto;
     width: 50rem;
   }
 
@@ -611,7 +623,7 @@ button {
     font-size: 5rem;
   }
   .display-card {
-    margin: auto;
+    margin: 1rem;
     margin-bottom: 4rem;
     height: auto;
     width: 30rem;
@@ -622,7 +634,7 @@ button {
   }
   .food-image {
     height: auto;
-    width: 30rem;
+    width: 25rem;
   }
   .name {
     font-size: 3rem;
@@ -645,7 +657,8 @@ button {
   }
   .display-food {
     height: auto;
-    margin: auto;
+    margin: 1rem;
+
     margin-bottom: 4rem;
     padding: 1rem;
   }
@@ -663,6 +676,9 @@ button {
   }
   .info {
     font-size: var(--h4);
+  }
+  li {
+    margin: 0;
   }
 }
 
