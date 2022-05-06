@@ -14,8 +14,10 @@ body,
   --gray: #aa9898;
   --black: #fffff;
   --white: #ffff;
+  --light-gray: #E6E6E6;
   --pink: #fbdddd;
-  --indigo: #171140;
+  --green: #ABC2AE;
+  --indigo: #3D4769;
   --gray-blue: #40587b;
 
   --link-underline-padding: 0.5em;
@@ -32,15 +34,17 @@ body,
   --primary: var(--yellow);
   --primary-shader: var(--gray);
   --primary-fontcolor: var(--black);
+  --primary-outline: var(--black);
   --primary-secondary: var(--white);
   --primary-card: var(--pink);
 }
 
 .cool {
-  --primary: var(--blue);
-  --primary-shader: var(--gray);
-  --primary-fontcolor: var(--white);
+  --primary: var(--indigo);
+  --primary-shader: var(--green);
+  --primary-fontcolor: var(--light-gray);
   --primary-secondary: var(--gray-blue);
+  --primary-outline: var(--black);
   --primary-card: var(--indigo);
 }
 
@@ -429,7 +433,7 @@ button {
   border-radius: 4rem;
   background-color: var(--primary-card);
   border: 0.5rem;
-  border-color: black;
+  border-color:var(--primary-outline);
   border-style: solid;
 }
 
@@ -441,7 +445,7 @@ button {
   border-radius: 4rem;
   background-color: var(--primary-card);
   border: 0.5rem;
-  border-color: black;
+  border-color: --primary-outline;
   border-style: solid;
 }
 
@@ -455,7 +459,7 @@ button {
   border-radius: 4rem;
   background-color: var(--primary-card);
   border: 0.5rem;
-  border-color: black;
+  border-color: var(--primary-outline);
   border-style: solid;
 }
 
@@ -502,7 +506,7 @@ button {
   background-color: var(--primary-card);
   margin: 6.25rem;
   border: 0.5rem;
-  border-color: black;
+  border-color: var(--primary-outline);
   border-style: solid;
 }
 .custom-image {
