@@ -90,14 +90,14 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background: repeating-linear-gradient(
     190deg,
-    rgba(255, 0, 0, 0.5) 40px,
-    rgba(255, 153, 0, 0.5) 80px,
-    rgba(255, 255, 0, 0.5) 120px,
-    rgba(0, 255, 0, 0.5) 160px,
-    rgba(0, 0, 255, 0.5) 200px,
-    rgba(75, 0, 130, 0.5) 240px,
-    rgba(238, 130, 238, 0.5) 280px,
-    rgba(255, 0, 0, 0.5) 300px
+    rgba(255, 0, 0, 0.5) 2.5rem,
+    rgba(255, 153, 0, 0.5) 5rem,
+    rgba(255, 255, 0, 0.5) 7.5rem,
+    rgba(0, 255, 0, 0.5) 10rem,
+    rgba(0, 0, 255, 0.5) 12.5rem,
+    rgba(75, 0, 130, 0.5) 15rem,
+    rgba(238, 130, 238, 0.5) 17.5rem,
+    rgba(255, 0, 0, 0.5) 18.75rem
   );
   border: solid;
   border-color: white;
