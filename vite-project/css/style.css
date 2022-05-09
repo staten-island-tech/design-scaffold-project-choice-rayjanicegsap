@@ -12,12 +12,12 @@ body,
   --blue: hsl(227, 63%, 27%);
   --yellow: #faf6d3;
   --gray: #aa9898;
-  --black: #fffff;
+  --black: #000;
   --white: #ffff;
-  --light-gray: #E6E6E6;
+  --light-gray: #e6e6e6;
   --pink: #fbdddd;
-  --green: #ABC2AE;
-  --indigo: #3D4769;
+  --green: #abc2ae;
+  --indigo: #3d4769;
   --gray-blue: #40587b;
 
   --link-underline-padding: 0.5em;
@@ -42,10 +42,10 @@ body,
 .cool {
   --primary: var(--indigo);
   --primary-shader: var(--green);
-  --primary-fontcolor: var(--light-gray);
+  --primary-fontcolor: var(--white);
   --primary-secondary: var(--gray-blue);
-  --primary-outline: var(--black);
-  --primary-card: var(--indigo);
+  --primary-outline: var(--white);
+  --primary-card: var(--black);
 }
 
 h1 {
@@ -271,7 +271,7 @@ progress::-webkit-progress-value {
   border-width: 0.25rem;
 }
 
-li {
+a {
   height: 7.5rem;
   margin: 1.2rem;
   font-size: 6rem;
@@ -433,7 +433,7 @@ button {
   border-radius: 4rem;
   background-color: var(--primary-card);
   border: 0.5rem;
-  border-color:var(--primary-outline);
+  border-color: var(--primary-outline);
   border-style: solid;
 }
 
@@ -547,7 +547,7 @@ button {
   top: 1rem;
   right: 1rem;
   padding: 0.25rem;
-  border: black solid 0.063rem;
+  border: black solid 0.05rem;
   background: white;
   cursor: pointer;
 }
@@ -569,7 +569,6 @@ button {
 
   .display-food {
     height: 50rem;
-
     width: 40rem;
   }
 
@@ -662,7 +661,6 @@ button {
   .display-food {
     height: auto;
     margin: 1rem;
-
     margin-bottom: 4rem;
     padding: 1rem;
   }
@@ -681,8 +679,8 @@ button {
   .info {
     font-size: var(--h4);
   }
-  li {
-    margin: 0;
+  a {
+    margin: 0.75rem;
   }
 }
 

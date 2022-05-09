@@ -99,6 +99,8 @@ function inserttours() {
 inserttours();
 
 /* gsap scroll animations */
+const tl = gsap.timeline({ delay: 0.2 });
+tl.from(".homepage", { opacity: 0, duration: 1 });
 
 ScrollTrigger.create({
   trigger: ".Attractions",
@@ -106,13 +108,10 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Attractions", { duration: 1.0, backgroundColor: "#faf6d3" });
+    gsap.to(".Attractions", { opacity: 1, duration: 1.5 });
   },
   onLeaveBack: () => {
-    gsap.to(".Attractions", {
-      duration: 1.0,
-      backgroundColor: /*"#FFFFFF" */ "#B1B27A",
-    });
+    gsap.to(".Attractions", { opacity: 0, duration: 1.5 });
   },
 });
 
@@ -122,16 +121,10 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Food", {
-      duration: 1.0,
-      backgroundColor: /* "#e7f8bd" */ "#faf6d3",
-    });
+    gsap.to(".Food", { opacity: 1, duration: 1.5 });
   },
   onLeaveBack: () => {
-    gsap.to(".Food", {
-      duration: 1.0,
-      backgroundColor: /* "#faf6d3" */ "#B1B27A",
-    });
+    gsap.to(".Food", { opacity: 0, duration: 1.5 });
   },
 });
 
@@ -141,10 +134,10 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Customs", { duration: 1.0, backgroundColor: "#f9f9da" });
+    gsap.to(".Customs", { opacity: 1, duration: 1.5 });
   },
   onLeaveBack: () => {
-    gsap.to(".Customs", { duration: 1.0, backgroundColor: "#B1B27A" });
+    gsap.to(".Customs", { opacity: 0, duration: 1.5 });
   },
 });
 
@@ -154,16 +147,10 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".Tours", {
-      duration: 1.0,
-      backgroundColor: /*"#f9f9ad"*/ "#faf6d3",
-    });
+    gsap.to(".Tours", { opacity: 1, duration: 1 });
   },
   onLeaveBack: () => {
-    gsap.to(".Tours", {
-      duration: 1.0,
-      backgroundColor: /*"#add8e6" */ "#B1B27A",
-    });
+    gsap.to(".Tours", { opacity: 0, duration: 1.5 });
   },
 });
 
@@ -173,10 +160,10 @@ ScrollTrigger.create({
   start: "top 50%",
   end: "bottom 0%",
   onEnter: () => {
-    gsap.to(".AboutUs", { duration: 1.0, backgroundColor: "#f9f9da" });
+    gsap.to(".AboutUs", { opacity: 1, duration: 1.5 });
   },
   onLeaveBack: () => {
-    gsap.to(".AboutUs", { duration: 1.0, backgroundColor: "#B1B27A" });
+    gsap.to(".AboutUs", { opacity: 0, duration: 1.5 });
   },
 });
 
