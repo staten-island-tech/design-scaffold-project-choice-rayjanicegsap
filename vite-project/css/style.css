@@ -67,14 +67,6 @@ h5 {
   font-size: var(--h5);
 }
 
-ul {
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--primary);
-}
 progress {
   position: fixed;
   top: 0;
@@ -104,6 +96,22 @@ progress::-webkit-progress-value {
   border-radius: 0.5rem;
 }
 
+.header-list {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  text-align: center;
+}
 /*Hover Animations*/
 /* Attraction Images */
 @-webkit-keyframes image {
@@ -245,6 +253,7 @@ progress::-webkit-progress-value {
   position: relative;
   overflow: hidden;
 }
+
 .tourbutton:before {
   content: "";
   position: absolute;
@@ -276,7 +285,7 @@ a {
   margin: 1.2rem;
   font-size: 6rem;
   text-align: center;
-  color: var(--primary-fontcolor);
+  color: white;
   display: inline;
   padding: 0 2rem 2.3rem;
   text-decoration: none;
@@ -296,24 +305,6 @@ button {
   background-color: var(--primary);
   position: fixed;
   z-index: 10;
-}
-
-.header-list {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding-top: 4rem;
-
-  text-align: center;
 }
 
 .container {
@@ -374,9 +365,13 @@ button {
 .Paris-top {
   padding-top: 30rem;
   font-size: 15rem;
+  color: var(--yellow);
+  text-shadow: var(--primary-shader);
 }
 .Paris-bottom {
   font-size: var(--h2);
+  color: var(--yellow);
+  text-shadow: var(--primary-shader);
 }
 .container {
   display: block;
@@ -529,8 +524,7 @@ button {
 .tourbutton {
   font-size: 5rem;
   background-color: var(--primary-secondary);
-  padding-left: 3rem;
-  padding-right: 3rem;
+
   text-decoration: none;
   color: var(--primary-fontcolor);
 }
@@ -682,10 +676,24 @@ button {
   a {
     margin: 0.75rem;
   }
+  .footer {
+    font-size: var(--h4);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .info {
     padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-height: 667px) {
+  .nav-link,
+  #Paris {
+    font-size: var(--h3);
+    padding-top: 0;
+  }
+  a {
+    padding: 0;
+    margin: -0.5rem;
   }
 }
