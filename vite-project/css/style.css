@@ -534,7 +534,13 @@ button {
   text-decoration: none;
   color: var(--primary-fontcolor);
 }
-
+.logos {
+  display: flex;
+  align-items: center;
+  float: right;
+  padding: 0;
+  background-color: var(--primary);
+}
 .hamburger {
   position: fixed;
   z-index: 100;
@@ -678,6 +684,11 @@ button {
   }
   .footer {
     font-size: var(--h4);
+  }
+  .tourbutton {
+    font-size: var(--h3);
+    display: inline-block;
+    padding: 0.5rem;
   }
 }
 
