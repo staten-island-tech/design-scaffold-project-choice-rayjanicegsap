@@ -29,51 +29,46 @@ const attractions = [
     name: `Eiffel Tower`,
     description: `A beautiful tower constructed out of iron beams. The heart of Paris. Next to the tower rests Champs de Mars Pont Alexandre III.`,
     imageurl:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=srgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTY0Nzk2OTExMg&ixlib=rb-1.2.1&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770684/GSAP%20Design%20Project:/photo-1502602898657-3e91760cbb34_yke638.jpg",
   },
   {
     name: `Louvre Museum`,
     description: `The Louvre Museum is one of the most visited museums in the world, holding countless exhibits and rare art collections.`,
     imageurl:
-      "https://images.unsplash.com/photo-1562115725-ebb30e8bc881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770735/GSAP%20Design%20Project:/photo-1562115725-ebb30e8bc881_v3uyva.avif",
   },
   {
     name: `Arc De Triomphe`,
     description: `The Arc De Triomphe was erected to honor the heroic sacrifices made during the French Revolution. Standing at a height of 50 meters, it is truly a sight to behold.`,
     imageurl:
-      "https://images.unsplash.com/photo-1627660852400-8afb9a04d667?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770746/GSAP%20Design%20Project:/photo-1627660852400-8afb9a04d667_xhrouh.avif",
   },
-  /*    {
-      name: `Cathédrale Notre-Dame`,
-      description: `Notre-Dame de Paris is a medival Catholics cathedral that was dedicated to the Virign Mary. The cathedral is considered one of the most beautiful and finest example of French Gothic architecture.`,
-      imageurl:
-        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=srgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTY0Nzk2OTExMg&ixlib=rb-1.2.1&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450",
-    },  */
+
 ];
 const foods = [
   {
     name: `Croissant`,
     description: `Croissants are buttery and crispy bread that are prevalent in France, especially Paris. They are flaky and delicious; it’d be a mistake to miss out on this wonderful treat.`,
     imageurl:
-      "https://www.aheadofthyme.com/wp-content/uploads/2020/05/quick-and-easy-butter-croissants-2.jpg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770758/GSAP%20Design%20Project:/quick-and-easy-butter-croissants-2_wqu9c2.jpg",
   },
   {
     name: `Macaroons`,
     description: `Macaroons are small cake/biscuits made from ground almonds and dressed with a light coating of sugar topped along with other assortment of toppings`,
     imageurl:
-      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/11/03/colorful-french-macarons-bakery-box-wood-surface-.jpg.rend.hgtvcom.406.305.suffix/1635922448414.jpeg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770769/GSAP%20Design%20Project:/1635922448414_ax94q0.jpg",
   },
   {
     name: `French Onion Soup`,
     description: `French Onion Soup is a classic soup made out of a base of meat stock and onions. This is often served with croutons.`,
     imageurl:
-      "https://images.unsplash.com/photo-1549203438-a7696aed4dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770777/GSAP%20Design%20Project:/photo-1549203438-a7696aed4dac_g5bqoi.avif",
   },
   {
     name: `Crème Brûlée`,
     description: `The Crème Brûlée is a dessert filled with custard and sprinkled with sugar on the top. It is often called burnt cream due to its appearance. `,
     imageurl:
-      "https://images.unsplash.com/photo-1554371650-1f19f803c220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770792/GSAP%20Design%20Project:/photo-1554371650-1f19f803c220_gkgzh4.avif",
   },
 ];
 
@@ -84,7 +79,7 @@ const tours = [
     price: 87.93,
     link: "https://www.viator.com/tours/Paris/Lido-de-Paris-Cabaret-Paris-Merveilles-Show/d479-5091LIDOPARIS",
     imageurl:
-      "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b3/ac/65.jpg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770843/GSAP%20Design%20Project:/65_k1czou.jpg",
   },
   {
     name: `Disneyland`,
@@ -92,7 +87,7 @@ const tours = [
     price: 62.1,
     link: "https://www.viator.com/tours/Paris/Disneyland-Paris-1-Day-Ticket/d479-5307DISNEYMAGIC",
     imageurl:
-      "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/10/cc/34.jpg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770804/GSAP%20Design%20Project:/34_lzdhtg.jpg",
   },
   {
     name: `Normandy D-Day Trip`,
@@ -100,7 +95,7 @@ const tours = [
     price: 192.51,
     link: "https://www.viator.com/tours/Paris/Normandy-D-Day-Landing-Beaches-Tour-including-Omaha-Beach-Cider-Tasting-and-Lunch/d479-3731NORMANDY",
     imageurl:
-      "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/1a/79/12.jpg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770815/GSAP%20Design%20Project:/12_iv3sud.jpg",
   },
   {
     name: `Champagne Fields`,
@@ -108,7 +103,7 @@ const tours = [
     price: 306.43,
     link: "https://www.viator.com/tours/Paris/Champagne-WineDay-Tour/d479-35428P1",
     imageurl:
-      "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/8f/aa.jpg",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770823/GSAP%20Design%20Project:/aa_aclvjz.jpg",
   },
 ];
 
@@ -117,25 +112,25 @@ const custom = [
     name: `Never Taking Wine To A Dinner Party`,
     description: `It is a French custom to never bring wine to a dinner party. The host has carefully chosen a bottle of wine for the evening. By bringing your own bottle you are imply that you have no trust in the host’s taste.`,
     imageurl:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770852/GSAP%20Design%20Project:/photo-1510812431401-41d2bd2722f3_ramrs7.avif",
   },
   {
     name: `Slapped By A Herring`,
     description: `During the year, places around France would hold festivals and carnivals. One of the key moments of the festivities is when 450 kilios of herring is tossed into the crowd. So if you ever get slapped with a herring, just know it was with good intentions.  `,
     imageurl:
-      "https://images.unsplash.com/photo-1567087978459-8a8eeac7bc75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770858/GSAP%20Design%20Project:/photo-1567087978459-8a8eeac7bc75_infakq.avif",
   },
   {
     name: `Being Late To Events`,
     description: `While in other parts of the world, it is seem to be disrespectful. However, in France, the social norm is the opposite. Guests are usually 10-15 minutes late to an event. `,
     imageurl:
-      "https://images.unsplash.com/photo-1624028409583-eac582b51895?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770866/GSAP%20Design%20Project:/photo-1624028409583-eac582b51895_ybula2.avif",
   },
   {
     name: `Celebrating With Car Horns`,
     description: `Following the marriage of a newly wed couple, the newlyweds are greeted with screeching car horns as they pull away in their wedding car. The newlyweds are greeted and sent off with the sounds of hundreds of car horns from the guests and townspeople.`,
     imageurl:
-      "https://images.unsplash.com/photo-1535745425003-d41f0bcca956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770875/GSAP%20Design%20Project:/photo-1535745425003-d41f0bcca956_wdk8fx.avif",
   },
 ];
 

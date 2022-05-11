@@ -14,7 +14,7 @@ body,
   --gray: #aa9898;
   --black: #000;
   --white: #ffff;
-  --light-gray: #e6e6e6;
+  --dark-green: #717F73;
   --pink: #fbdddd;
   --green: #abc2ae;
   --indigo: #3d4769;
@@ -45,7 +45,7 @@ body,
   --primary-fontcolor: var(--white);
   --primary-secondary: var(--gray-blue);
   --primary-outline: var(--white);
-  --primary-card: var(--black);
+  --primary-card: var(--dark-green);
 }
 
 h1 {
@@ -430,6 +430,7 @@ button {
   border: 0.5rem;
   border-color: var(--primary-outline);
   border-style: solid;
+
 }
 
 .display-custom {
@@ -442,6 +443,8 @@ button {
   border: 0.5rem;
   border-color: --primary-outline;
   border-style: solid;
+
+
 }
 
 .display-card {
@@ -492,7 +495,7 @@ button {
 }
 
 .tours-card {
-  height: 50%;
+  height: auto;
   padding: 2rem;
   text-align: center;
   margin-left: 26rem;
@@ -503,6 +506,7 @@ button {
   border: 0.5rem;
   border-color: var(--primary-outline);
   border-style: solid;
+
 }
 .custom-image {
   width: auto;
@@ -510,6 +514,7 @@ button {
   background-size: cover;
   overflow: hidden;
   border-radius: 4rem;
+  
 }
 
 .info {

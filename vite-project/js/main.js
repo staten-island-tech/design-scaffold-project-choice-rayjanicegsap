@@ -7,7 +7,8 @@ import { custom } from "./const";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-var CLOUDINARY_UPLOAD_PRESET =`eyxeydks`;
+
+
 
 DOMselectors.forEach((DOMselectors) => {
   DOMselectors.btn.addEventListener("click", function () {
