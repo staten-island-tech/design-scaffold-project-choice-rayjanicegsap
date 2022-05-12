@@ -14,7 +14,7 @@ body,
   --gray: #aa9898;
   --black: #000;
   --white: #ffff;
-  --dark-green: #717F73;
+  --dark-green: #717f73;
   --pink: #fbdddd;
   --green: #abc2ae;
   --indigo: #3d4769;
@@ -430,7 +430,6 @@ button {
   border: 0.5rem;
   border-color: var(--primary-outline);
   border-style: solid;
-
 }
 
 .display-custom {
@@ -443,8 +442,6 @@ button {
   border: 0.5rem;
   border-color: --primary-outline;
   border-style: solid;
-
-
 }
 
 .display-card {
@@ -506,7 +503,6 @@ button {
   border: 0.5rem;
   border-color: var(--primary-outline);
   border-style: solid;
-
 }
 .custom-image {
   width: auto;
@@ -514,7 +510,6 @@ button {
   background-size: cover;
   overflow: hidden;
   border-radius: 4rem;
-  
 }
 
 .info {
@@ -539,12 +534,26 @@ button {
   text-decoration: none;
   color: var(--primary-fontcolor);
 }
+
+.BigLogo {
+  display: flex;
+  float: left;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
 .logos {
   display: flex;
-  align-items: center;
-  float: right;
-  padding: 0;
+  width: 100%;
   background-color: var(--primary);
+}
+.logo {
+  width: 5rem;
+  height: auto;
+  border-radius: 5px;
+}
+.fatlogo {
+  height: 5rem;
+  width: auto;
 }
 .hamburger {
   position: fixed;
@@ -621,6 +630,9 @@ button {
   .description {
     font-size: 3rem;
   }
+  .BigLogo {
+    font-size: var(--h4);
+  }
 }
 /* done */
 @media only screen and (max-width: 768px) {
@@ -695,11 +707,27 @@ button {
     display: inline-block;
     padding: 0.5rem;
   }
+  .BigLogo {
+    font-size: var(--h4);
+  }
+
+  .logo {
+    width: 2.5rem;
+    height: auto;
+    border-radius: 2.5px;
+  }
+  .fatlogo {
+    height: 2.5rem;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .info {
     padding-bottom: 2rem;
+  }
+  .BigLogo {
+    font-size: var(--h3);
   }
 }
 @media only screen and (max-height: 667px) {

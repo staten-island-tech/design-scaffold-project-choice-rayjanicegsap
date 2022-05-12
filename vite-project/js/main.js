@@ -8,8 +8,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 DOMselectors.forEach((DOMselectors) => {
   DOMselectors.btn.addEventListener("click", function () {
     DOMselectors.Header.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -155,20 +153,6 @@ ScrollTrigger.create({
     gsap.to(".Tours", { opacity: 0, duration: 1.5 });
   },
 });
-
-ScrollTrigger.create({
-  trigger: ".AboutUs",
-
-  start: "top 50%",
-  end: "bottom 0%",
-  onEnter: () => {
-    gsap.to(".AboutUs", { opacity: 1, duration: 1.5 });
-  },
-  onLeaveBack: () => {
-    gsap.to(".AboutUs", { opacity: 0, duration: 1.5 });
-  },
-});
-
 
 gsap.to("progress", {
   value: 100,
