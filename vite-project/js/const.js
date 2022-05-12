@@ -43,7 +43,6 @@ const attractions = [
     imageurl:
       "https://res.cloudinary.com/vite-project/image/upload/c_scale,f_auto,q_auto,w_800/v1651770746/GSAP%20Design%20Project:/photo-1627660852400-8afb9a04d667_xhrouh.avif",
   },
-
 ];
 const foods = [
   {

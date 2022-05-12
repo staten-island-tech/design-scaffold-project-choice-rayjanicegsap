@@ -549,7 +549,7 @@ button {
 .logo {
   width: 5rem;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0.313rem;
 }
 .fatlogo {
   height: 5rem;
@@ -714,7 +714,7 @@ button {
   .logo {
     width: 2.5rem;
     height: auto;
-    border-radius: 2.5px;
+    border-radius: 0.156rem;
   }
   .fatlogo {
     height: 2.5rem;
