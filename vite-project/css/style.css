@@ -541,6 +541,13 @@ button {
   margin-top: 3rem;
   margin-left: 3rem;
 }
+.BigLogo:hover span {
+  display: none;
+}
+.BigLogo:hover::before {
+  content: " لأنا داخل جدرانك";
+}
+
 .logos {
   display: flex;
   width: 100%;
