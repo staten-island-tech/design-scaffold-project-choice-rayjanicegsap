@@ -292,9 +292,7 @@ a {
   transition: background-size 0.5s;
 }
 
-.footer {
-  font-size: 3rem;
-}
+
 
 button {
   all: unset;
@@ -529,11 +527,7 @@ button {
   color: var(--primary-fontcolor);
 }
 
-.footer {
-  margin-left: 50%;
-  text-decoration: none;
-  color: var(--primary-fontcolor);
-}
+
 
 .BigLogo {
   display: flex;
@@ -545,7 +539,7 @@ button {
   display: none;
 }
 .BigLogo:hover::before {
-  content: " لأنا داخل جدرانك";
+  content: "filler";
 }
 
 .logos {
@@ -629,8 +623,7 @@ button {
     font-size: 2.75rem;
   }
 
-  .info,
-  .footer {
+  .info{
     text-align: left;
   }
 
@@ -706,9 +699,7 @@ button {
   a {
     margin: 0.75rem;
   }
-  .footer {
-    font-size: var(--h4);
-  }
+  
   .tourbutton {
     font-size: var(--h3);
     display: inline-block;
@@ -743,8 +734,5 @@ button {
     font-size: var(--h3);
     padding-top: 0;
   }
-  a {
-    padding: 0;
-    margin: -0.5rem;
-  }
+
 }
