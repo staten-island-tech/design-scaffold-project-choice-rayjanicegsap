@@ -9,7 +9,6 @@ body,
 }
 :root {
   /*Custom Color Properties*/
-  --blue: hsl(227, 63%, 27%);
   --yellow: #faf6d3;
   --gray: #aa9898;
   --black: #000;
