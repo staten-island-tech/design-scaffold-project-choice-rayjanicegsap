@@ -527,17 +527,14 @@ button {
   color: var(--primary-fontcolor);
 }
 
-.BigLogo {
+.funny {
+  height: 20rem;
+  width: 20rem;
   display: flex;
-  float: left;
-  margin-top: 3rem;
-  margin-left: 3rem;
 }
-.BigLogo:hover span {
-  display: none;
-}
-.BigLogo:hover::before {
-  content: "filler";
+
+.funny:hover {
+  background: url("https://ih1.redbubble.net/image.3046209270.1189/st,small,507x507-pad,600x600,f8f8f8.jpg");
 }
 
 .logos {
@@ -554,6 +551,7 @@ button {
   height: 5rem;
   width: auto;
 }
+
 .hamburger {
   position: fixed;
   z-index: 100;
