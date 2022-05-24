@@ -532,8 +532,9 @@ button {
   width: 40rem;
 }
 
-.funny:hover {
-  background: url("https://ih1.redbubble.net/image.3046209270.1189/st,small,507x507-pad,600x600,f8f8f8.jpg");
+.funnysize {
+  height: 27rem;
+  width: 40rem;
 }
 
 .logos {
@@ -549,6 +550,26 @@ button {
 .fatlogo {
   height: 5rem;
   width: auto;
+}
+.BigLogo {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.remove {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .hamburger {
@@ -625,9 +646,6 @@ button {
   .description {
     font-size: 3rem;
   }
-  .BigLogo {
-    font-size: var(--h4);
-  }
 }
 /* done */
 @media only screen and (max-width: 768px) {
@@ -700,9 +718,6 @@ button {
     display: inline-block;
     padding: 0.5rem;
   }
-  .BigLogo {
-    font-size: var(--h4);
-  }
 
   .logo {
     width: 2.5rem;
@@ -718,9 +733,6 @@ button {
 @media only screen and (max-width: 1024px) {
   .info {
     padding-bottom: 2rem;
-  }
-  .BigLogo {
-    font-size: var(--h3);
   }
 }
 @media only screen and (max-height: 667px) {

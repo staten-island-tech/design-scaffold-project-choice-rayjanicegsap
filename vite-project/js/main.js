@@ -183,3 +183,18 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+function showFunny() {
+  funny.insertAdjacentHTML(
+    "afterbegin",
+    `<img src="https://ih1.redbubble.net/image.3046209270.1189/st,small,507x507-pad,600x600,f8f8f8.jpg" class="funnysize">
+    <button class="remove">Remove</button>`
+  );
+}
+function removeFunny() {
+  document.querySelector(".funnysize").remove;
+}
+const funny = document.querySelector(".funny");
+const funnybutton = document.querySelector(".BigLogo");
+const remove = document.querySelector(".remove");
+funnybutton.addEventListener("click", showFunny);
+remove.addEventListener("click", removeFunny);
