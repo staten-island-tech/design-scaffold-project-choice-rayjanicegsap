@@ -528,9 +528,8 @@ button {
 }
 
 .funny {
-  height: 20rem;
-  width: 20rem;
-  display: flex;
+  height: 27rem;
+  width: 40rem;
 }
 
 .funny:hover {
