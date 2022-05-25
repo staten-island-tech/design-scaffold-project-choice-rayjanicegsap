@@ -291,8 +291,6 @@ a {
   transition: background-size 0.5s;
 }
 
-
-
 button {
   all: unset;
   cursor: pointer;
@@ -519,26 +517,24 @@ button {
   padding-bottom: 2rem;
 }
 .tourbutton {
-  font-size: 5rem;
+  font-size: 6rem;
   background-color: var(--primary-secondary);
-
+  border-radius: 2rem;
   text-decoration: none;
   color: var(--primary-fontcolor);
 }
 
-
-
 .BigLogo {
   display: flex;
   float: left;
-  margin-top: 3rem;
-  margin-left: 3rem;
+
 }
 .BigLogo:hover span {
   display: none;
 }
 .BigLogo:hover::before {
-  content: "filler";
+  content: "Visit Paris";
+  border-radius: 4rem;
 }
 
 .logos {
@@ -622,21 +618,22 @@ button {
     font-size: 2.75rem;
   }
 
-  .info{
+  .info {
     text-align: left;
   }
 
   .description {
     font-size: 3rem;
   }
-  .BigLogo {
-    font-size: var(--h4);
-  }
+  
 }
 /* done */
 @media only screen and (max-width: 768px) {
   .container {
     background-image: url("https://lp-cms-production.imgix.net/2021-08/shutterstockRF_108818438.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
+  }
+  .BigLogo {
+    font-size: var(--h4);
   }
   .headers {
     font-size: 5rem;
@@ -698,14 +695,11 @@ button {
   a {
     margin: 0.75rem;
   }
-  
+
   .tourbutton {
     font-size: var(--h3);
     display: inline-block;
     padding: 0.5rem;
-  }
-  .BigLogo {
-    font-size: var(--h4);
   }
 
   .logo {
@@ -717,6 +711,7 @@ button {
     height: 2.5rem;
     width: auto;
   }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -725,6 +720,7 @@ button {
   }
   .BigLogo {
     font-size: var(--h3);
+    
   }
 }
 @media only screen and (max-height: 667px) {
@@ -733,5 +729,9 @@ button {
     font-size: var(--h3);
     padding-top: 0;
   }
-
+  .BigLogo {
+    display: flex;
+    float: left;
+  
+  }
 }
