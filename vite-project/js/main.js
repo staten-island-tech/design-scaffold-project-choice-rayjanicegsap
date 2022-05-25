@@ -186,7 +186,7 @@ menuItems.forEach(function (menuItem) {
 function showFunny() {
   funny.insertAdjacentHTML(
     "afterbegin",
-    `<img src="https://ih1.redbubble.net/image.3046209270.1189/st,small,507x507-pad,600x600,f8f8f8.jpg" class="funnysize">
+    `<img src="https://res.cloudinary.com/vite-project/image/upload/v1653324207/GSAP%20Design%20Project:/bbexwyq2zqfxdws0eyyg.jpg" class="funnysize">
     <button class="remove">Remove</button>`
   );
 }
